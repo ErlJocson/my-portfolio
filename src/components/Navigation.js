@@ -14,7 +14,7 @@ function Navigation() {
         </BurgerButton>
         {showNav ? (
           <>
-            <MyLink onClick={() => setShowNav(!showNav)} to="/jerds">
+            <MyLink onClick={() => setShowNav(!showNav)} to="/my-portfolio">
               about
             </MyLink>
             <MyLink onClick={() => setShowNav(!showNav)} to="/education">
