@@ -37,8 +37,10 @@ const ProjectContainer = styled.div`
   padding: 20px;
   border-radius: 20px;
   background-color: white;
+
   cursor: pointer;
   border: 1px solid rgb(213, 213, 213);
+
   &:hover {
     box-shadow: 0 2px 6px rgb(118, 118, 118);
   }
@@ -48,5 +50,32 @@ const ProjectContainer = styled.div`
     height: 200px;
     margin: 20px 0;
     border: 1px solid rgb(213, 213, 213);
+  }
+
+  @media screen and (max-width: 1100px) {
+    h3 {
+      font-size: 18px;
+    }
+    img {
+      margin: 10px 0;
+      width: 250px;
+      height: 150px;
+    }
+
+    a {
+      font-size: 12px;
+    }
+  }
+
+  @media screen and (max-width: 720px) {
+    h3 {
+      font-size: 15px;
+    }
+
+    img {
+      margin: 5px;
+      width: 200px;
+      height: 100px;
+    }
   }
 `;
