@@ -8,7 +8,7 @@ function About() {
       <Container>
         <Title>About me</Title>
         <AboutContainer>
-          <Image src="images/sss.png" />
+          <Image src={process.env.PUBLIC_URL + "/images/sss.png"} />
           <Details>
             <div className="title">Erl Jerrald Jocson</div>
             <div className="short-summary">

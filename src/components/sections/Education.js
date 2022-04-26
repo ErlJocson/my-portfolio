@@ -1,6 +1,7 @@
 import Container from "./components/Container";
 import Title from "./components/Title";
 import styled from "styled-components";
+import certificates from "./link/link";
 
 function Education() {
   return (
@@ -23,11 +24,13 @@ function Education() {
       <Container>
         <Title>Certification</Title>
         <SomeContainer>
-          <CertificateContainer>
-            <h3>Fundamentals</h3>
-            <img src="" alt="" />
-            <p>Sololearn</p>
-          </CertificateContainer>
+          {certificates.map((certificate) => (
+            <CertificateContainer>
+              <h3>{certificate.courseTitle}</h3>
+              <img src={process.env.PUBLIC_URL + certificate.image} />
+              <p>{certificate.school}</p>
+            </CertificateContainer>
+          ))}
         </SomeContainer>
       </Container>
     </>
@@ -46,7 +49,7 @@ const SomeContainer = styled.div`
 const EducationContainer = styled.div`
   text-align: center;
   margin: 10px;
-  padding: 20px;
+  padding: 10px;
   border-radius: 20px;
   background-color: white;
   cursor: pointer;
@@ -56,4 +59,11 @@ const EducationContainer = styled.div`
   }
 `;
 
-const CertificateContainer = styled(EducationContainer)``;
+const CertificateContainer = styled(EducationContainer)`
+  width: 300px;
+  img {
+    margin: 10px 0;
+    height: 150px;
+    width: 250px;
+  }
+`;
