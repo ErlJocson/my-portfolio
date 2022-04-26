@@ -129,11 +129,13 @@ const Image = styled.img`
   @media screen and (max-width: 900px) {
     width: 250px;
     height: 200px;
+    margin: 15px;
   }
 
   @media screen and (max-width: 720px) {
     width: 200px;
     height: 150px;
+    margin: 5px;
   }
 `;
 
@@ -189,8 +191,9 @@ const SkillsContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0 20px;
+  margin: 0 auto;
   margin-top: 20px;
+  width: 80%;
   p {
     padding: 10px 20px;
     margin: 10px;
@@ -210,12 +213,14 @@ const SkillsContainer = styled.div`
   @media screen and (max-width: 1100px) {
     p {
       font-size: 20px;
+      margin: 5px;
     }
   }
 
   @media screen and (max-width: 900px) {
     p {
       font-size: 15px;
+      padding: 10px;
     }
   }
 `;

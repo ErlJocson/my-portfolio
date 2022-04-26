@@ -1,5 +1,5 @@
-import Container from "./sections/components/Container";
-import Title from "./sections/components/Title";
+import Container from "./components/Container";
+import Title from "./components/Title";
 
 function Project() {
   return (

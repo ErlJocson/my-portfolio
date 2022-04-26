@@ -9,6 +9,5 @@ export default Container;
 const MyContainer = styled.div`
   margin: 10px;
   padding: 10px 0;
-  margin-left: 50px;
-  min-height: 50vh;
+  margin-left: 49px;
 `;

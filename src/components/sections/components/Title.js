@@ -7,7 +7,10 @@ function Title(props) {
 export default Title;
 
 const MyTitle = styled.h1`
-  letter-spacing: 2px;
+  letter-spacing: 6px;
   text-transform: uppercase;
   text-align: center;
+  @media screen and (max-width: 720px) {
+    font-size: 23px;
+  }
 `;

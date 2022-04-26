@@ -7,7 +7,7 @@ function Navigation() {
   return (
     <Nav show={showNav}>
       <LinkContainer>
-        <BurgerButton onClick={() => setShowNav(!showNav)}>
+        <BurgerButton onClick={() => setShowNav(!showNav)} show={showNav}>
           <div></div>
           <div></div>
           <div></div>
@@ -67,12 +67,13 @@ const MyLink = styled(Link)`
 `;
 
 const BurgerButton = styled.div`
-  margin: 4px;
+  margin: ${(props) => (props.show ? "0 0 0 3px" : "auto")};
   cursor: pointer;
   div {
-    height: 2px;
+    height: 3px;
     background-color: black;
     width: 20px;
     margin: 2px;
+    border-radius: 10px;
   }
 `;
