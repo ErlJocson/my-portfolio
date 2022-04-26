@@ -1,7 +1,7 @@
 import Container from "./components/Container";
 import Title from "./components/Title";
 import styled from "styled-components";
-import certificates from "./link/link";
+import certificates from "./link/cert";
 
 function Education() {
   return (
@@ -24,10 +24,10 @@ function Education() {
       <Container>
         <Title>Certification</Title>
         <SomeContainer>
-          {certificates.map((certificate) => (
-            <CertificateContainer>
+          {certificates.map((certificate, id) => (
+            <CertificateContainer key={id}>
               <h3>{certificate.courseTitle}</h3>
-              <img src={process.env.PUBLIC_URL + certificate.image} />
+              <img src={process.env.PUBLIC_URL + certificate.image} alt="" />
               <p>{certificate.school}</p>
             </CertificateContainer>
           ))}
