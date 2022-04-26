@@ -26,7 +26,7 @@ function About() {
         </Contact>
       </Container>
       <Container>
-        <Title>Skills</Title>
+        <Title>Related Skills</Title>
         <SkillsContainer>
           <p>Python</p>
           <p>Flask</p>
@@ -69,7 +69,7 @@ const Details = styled.div`
     letter-spacing: 2px;
     text-transform: uppercase;
     background-color: white;
-    border: 1px solid gray;
+    border: 1px solid rgb(213, 213, 213);
     width: 600px;
   }
 
@@ -85,7 +85,6 @@ const Details = styled.div`
 
   div:hover {
     box-shadow: 0 2px 6px rgb(118, 118, 118);
-    border: 1px solid aliceblue;
   }
 
   @media screen and (max-width: 1100px) {
@@ -143,7 +142,7 @@ const Contact = styled.div`
   display: flex;
   flex-direction: column;
   text-align: center;
-  border: 1px solid gray;
+  border: 1px solid rgb(213, 213, 213);
   padding: 10px;
   margin: 0 auto;
   width: 80%;
@@ -153,7 +152,6 @@ const Contact = styled.div`
   background-color: white;
   &:hover {
     box-shadow: 0 2px 6px rgb(118, 118, 118);
-    border: 1px solid aliceblue;
   }
 
   h3 {
@@ -201,12 +199,12 @@ const SkillsContainer = styled.div`
     text-transform: uppercase;
     border-radius: 20px;
     background-color: white;
-    border: 1px solid gray;
+    border: 1px solid rgb(213, 213, 213);
     cursor: pointer;
+    font-style: italic;
   }
 
   p:hover {
-    border: 1px solid aliceblue;
     box-shadow: 0 2px 6px rgb(118, 118, 118);
   }
 

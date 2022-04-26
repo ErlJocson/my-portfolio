@@ -1,11 +1,6 @@
 import styled from "styled-components";
 import Navigation from "./components/Navigation";
-import {
-  About,
-  Certification,
-  Education,
-  Project,
-} from "./components/sections.js";
+import { About, Education, Project } from "./components/sections.js";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -16,7 +11,6 @@ function App() {
         <Routes>
           <Route element={<About />} path="/my-portfolio" />
           <Route element={<Education />} path="/education" />
-          <Route element={<Certification />} path="/certification" />
           <Route element={<Project />} path="/project" />
         </Routes>
       </BrowserRouter>

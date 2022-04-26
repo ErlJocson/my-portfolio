@@ -20,9 +20,6 @@ function Navigation() {
             <MyLink onClick={() => setShowNav(!showNav)} to="/education">
               education
             </MyLink>
-            <MyLink onClick={() => setShowNav(!showNav)} to="/certification">
-              certification
-            </MyLink>
             <MyLink onClick={() => setShowNav(!showNav)} to="/project">
               project
             </MyLink>
