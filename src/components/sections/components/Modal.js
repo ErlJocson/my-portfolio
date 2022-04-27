@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 function Modal(props) {
   return (
-    <MyModal>
+    <MyModal onClick={props.closeModalFunction}>
       <img src={props.image} alt="" />
     </MyModal>
   );
@@ -11,11 +11,23 @@ function Modal(props) {
 export default Modal;
 
 const MyModal = styled.div`
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
   z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 90%;
+    height: 90vh;
+  }
+
+  @media screen and (max-width: 900px) {
+    img {
+      width: 90%;
+      height: 40vh;
+    }
+  }
 `;

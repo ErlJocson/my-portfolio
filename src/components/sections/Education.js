@@ -2,10 +2,30 @@ import Container from "./components/Container";
 import Title from "./components/Title";
 import styled from "styled-components";
 import certificates from "./link/cert";
+import { useState } from "react";
+import Modal from "./components/Modal";
 
 function Education() {
+  const [modal, setModal] = useState(false);
+  const [imageDir, setIMGDir] = useState("");
+
+  const openModal = (imgDirectory) => {
+    setModal(!modal);
+    setIMGDir(imgDirectory);
+  };
+
   return (
     <>
+      {modal ? (
+        <Modal
+          image={imageDir}
+          closeModalFunction={() => {
+            setModal(!modal);
+          }}
+        />
+      ) : (
+        ""
+      )}
       <Container>
         <Title>Education</Title>
         <SomeContainer>
@@ -25,7 +45,12 @@ function Education() {
         <Title>Certification</Title>
         <SomeContainer>
           {certificates.map((certificate, id) => (
-            <CertificateContainer key={id}>
+            <CertificateContainer
+              key={id}
+              onClick={() =>
+                openModal(process.env.PUBLIC_URL + certificate.image)
+              }
+            >
               <h3>{certificate.courseTitle}</h3>
               <img src={process.env.PUBLIC_URL + certificate.image} alt="" />
               <p>{certificate.school}</p>
@@ -57,6 +82,24 @@ const EducationContainer = styled.div`
   &:hover {
     box-shadow: 0 2px 6px rgb(118, 118, 118);
   }
+
+  span {
+    color: gray;
+  }
+
+  @media screen and (max-width: 720px) {
+    h3 {
+      font-size: 15px;
+    }
+
+    p {
+      font-size: 12px;
+    }
+
+    span {
+      font-size: 12px;
+    }
+  }
 `;
 
 const CertificateContainer = styled(EducationContainer)`
@@ -65,5 +108,14 @@ const CertificateContainer = styled(EducationContainer)`
     margin: 10px 0;
     height: 150px;
     width: 250px;
+  }
+
+  @media screen and (max-width: 720px) {
+    width: 250px;
+    img {
+      height: 100px;
+      width: 200px;
+      margin: 5px 0;
+    }
   }
 `;
