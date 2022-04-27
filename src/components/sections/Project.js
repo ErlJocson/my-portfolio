@@ -12,7 +12,9 @@ function Project() {
           <ProjectContainer>
             <h3>{project.project}</h3>
             <img src={process.env.PUBLIC_URL + project.img} alt="" />
-            <a href={project.link}>View project</a>
+            <a href={project.link} target={"_black"} rel="nofollow">
+              View project
+            </a>
           </ProjectContainer>
         ))}
       </SomeContainer>

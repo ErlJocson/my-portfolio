@@ -22,7 +22,13 @@ function About() {
           <h3>CONTACT INFORMATION</h3>
           <a>jocsonerl@gmail.com</a>
           <a>0939-784-5820</a>
-          <a href="https://github.com/ErlJocson">GITHUB</a>
+          <a
+            href="https://github.com/ErlJocson"
+            target={"_black"}
+            rel="nofollow"
+          >
+            GITHUB
+          </a>
         </Contact>
       </Container>
       <Container>
