@@ -27,7 +27,7 @@ function About() {
             target={"_black"}
             rel="nofollow"
           >
-            GITHUB
+            https://github.com/ErlJocson
           </a>
         </Contact>
       </Container>
@@ -77,6 +77,7 @@ const Details = styled.div`
     background-color: white;
     border: 1px solid rgb(213, 213, 213);
     width: 600px;
+    transition: 300ms all ease;
   }
 
   .title {
@@ -109,8 +110,8 @@ const Details = styled.div`
     }
 
     div {
-      width: 200px;
-      margin: 10px;
+      width: 80%;
+      margin: 10px auto;
     }
   }
 
@@ -145,8 +146,6 @@ const Image = styled.img`
 `;
 
 const Contact = styled.div`
-  display: flex;
-  flex-direction: column;
   text-align: center;
   border: 1px solid rgb(213, 213, 213);
   padding: 10px;
@@ -155,6 +154,7 @@ const Contact = styled.div`
   border-radius: 20px;
   margin-bottom: 20px;
   cursor: pointer;
+  transition: 300ms all ease;
   background-color: white;
   &:hover {
     box-shadow: 0 2px 6px rgb(118, 118, 118);
@@ -166,6 +166,12 @@ const Contact = styled.div`
 
   a {
     text-transform: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+  }
+
+  a:hover {
+    background-color: #d6d6d6;
   }
 
   @media screen and (max-width: 1100px) {
@@ -179,6 +185,9 @@ const Contact = styled.div`
   }
 
   @media screen and (max-width: 900px) {
+    display: flex;
+    flex-direction: column;
+
     & {
       font-size: 12px;
     }
@@ -206,6 +215,7 @@ const SkillsContainer = styled.div`
     border-radius: 20px;
     background-color: white;
     border: 1px solid rgb(213, 213, 213);
+    transition: 300ms all ease;
     cursor: pointer;
     font-style: italic;
   }

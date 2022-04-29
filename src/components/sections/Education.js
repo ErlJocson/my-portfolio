@@ -77,6 +77,7 @@ const EducationContainer = styled.div`
   padding: 10px;
   border-radius: 20px;
   background-color: white;
+  transition: 300ms all ease;
   cursor: pointer;
   border: 1px solid rgb(213, 213, 213);
   &:hover {
