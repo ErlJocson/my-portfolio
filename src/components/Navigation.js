@@ -1,76 +1,37 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { useState } from "react";
 
 function Navigation() {
-  const [showNav, setShowNav] = useState(false);
   return (
-    <Nav show={showNav}>
-      <LinkContainer>
-        <BurgerButton onClick={() => setShowNav(!showNav)} show={showNav}>
-          <div></div>
-          <div></div>
-          <div></div>
-        </BurgerButton>
-        {showNav ? (
-          <>
-            <MyLink onClick={() => setShowNav(!showNav)} to="/my-portfolio">
-              about
-            </MyLink>
-            <MyLink onClick={() => setShowNav(!showNav)} to="/education">
-              education
-            </MyLink>
-            <MyLink onClick={() => setShowNav(!showNav)} to="/project">
-              project
-            </MyLink>
-          </>
-        ) : (
-          ""
-        )}
-      </LinkContainer>
-    </Nav>
+    <MyNavigation>
+      <MyLink to="/my-portfolio">
+        <i class="fa-solid fa-person-digging"></i> Skills
+      </MyLink>
+      <MyLink to="/education">
+        <i class="fa-solid fa-graduation-cap"></i> Education
+      </MyLink>
+      <MyLink to="/project">
+        <i class="fa-solid fa-file-code"></i> Project
+      </MyLink>
+    </MyNavigation>
   );
 }
 
 export default Navigation;
 
-const Nav = styled.nav`
-  position: fixed;
-  top: 0;
-  width: ${(props) => (props.show ? "200px" : "50px")};
-  bottom: 0;
-  background-color: white;
-  box-shadow: 0 2px 6px rgb(118, 118, 118);
-`;
-
-const LinkContainer = styled.div`
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-`;
-
 const MyLink = styled(Link)`
-  padding: 10px;
-  border-radius: 10px;
-  margin: 6px;
+  font-size: 25px;
   text-transform: uppercase;
-  text-decoration: none;
   font-weight: bold;
   color: black;
-
+  text-decoration: none;
   &:hover {
-    box-shadow: 0 2px 6px rgb(118, 118, 118);
+    color: #424242;
   }
 `;
 
-const BurgerButton = styled.div`
-  margin: ${(props) => (props.show ? "0 0 0 3px" : "auto")};
-  cursor: pointer;
-  div {
-    height: 3px;
-    background-color: black;
-    width: 20px;
-    margin: 2px;
-    border-radius: 10px;
-  }
+const MyNavigation = styled.div`
+  display: flex;
+  margin: 20px 0;
+  justify-content: space-around;
 `;

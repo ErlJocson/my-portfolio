@@ -1,15 +1,17 @@
 import styled from "styled-components";
-import Navigation from "./components/Navigation";
-import { About, Education, Project } from "./components/sections.js";
+import Header from "./components/Header";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Skills, Education, Project } from "./components/Section.js";
+import Navigation from "./components/Navigation";
 
 function App() {
   return (
     <MainContainer>
+      <Header />
       <BrowserRouter>
         <Navigation />
         <Routes>
-          <Route element={<About />} path="/my-portfolio" />
+          <Route element={<Skills />} path="/my-portfolio" />
           <Route element={<Education />} path="/education" />
           <Route element={<Project />} path="/project" />
         </Routes>

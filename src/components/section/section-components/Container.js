@@ -7,7 +7,6 @@ function Container(props) {
 export default Container;
 
 const MyContainer = styled.div`
-  margin: 10px;
-  padding: 10px 0;
-  margin-left: 49px;
+  width: 90%;
+  margin: auto;
 `;
