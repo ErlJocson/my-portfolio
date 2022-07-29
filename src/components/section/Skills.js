@@ -14,9 +14,9 @@ function Skills() {
       >
         <div className="skill-header">
           {showProgrammingSkill ? (
-            <i class="fa-solid fa-minus"></i>
+            <i className="fa-solid fa-minus red"></i>
           ) : (
-            <i class="fa-solid fa-plus"></i>
+            <i className="fa-solid fa-plus green"></i>
           )}
           <h3>Programming skills</h3>
         </div>
@@ -40,9 +40,9 @@ function Skills() {
       <SkillsContainer onClick={() => setShowToolsSkill(!showToolsSkill)}>
         <div className="skill-header">
           {showToolsSkill ? (
-            <i class="fa-solid fa-minus"></i>
+            <i className="fa-solid fa-minus red"></i>
           ) : (
-            <i class="fa-solid fa-plus"></i>
+            <i className="fa-solid fa-plus green"></i>
           )}
           <h3>Tools and technologies</h3>
         </div>
@@ -64,9 +64,9 @@ function Skills() {
       <SkillsContainer onClick={() => setShowSoftSkill(!showSoftSkill)}>
         <div className="skill-header">
           {showSoftSkill ? (
-            <i class="fa-solid fa-minus"></i>
+            <i className="fa-solid fa-minus red"></i>
           ) : (
-            <i class="fa-solid fa-plus"></i>
+            <i className="fa-solid fa-plus green"></i>
           )}
           <h3>Soft skills</h3>
         </div>
@@ -110,8 +110,17 @@ const SkillsContainer = styled.div`
   .skill-header {
     display: flex;
     align-items: center;
+    .red {
+      color: red;
+    }
+
+    .green {
+      color: green;
+    }
+
     i {
       margin-right: 6px;
+      font-weight: bold;
     }
   }
 `;
