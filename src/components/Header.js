@@ -12,7 +12,11 @@ function Header() {
           <i class="fa-solid fa-phone"></i> 0939-784-5820
         </li>
         <li>
-          <a href="https://github.com/ErlJocson" target={"_blank"}>
+          <a
+            href="https://github.com/ErlJocson"
+            target={"_blank"}
+            rel="noreferrer"
+          >
             <i class="fa-brands fa-github"></i> GitHub
           </a>
         </li>
