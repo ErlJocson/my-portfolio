@@ -39,6 +39,13 @@ const HeaderContainer = styled.div`
   justify-content: center;
   align-items: center;
   background-color: #0f0b0b;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(57, 82, 88, 1) 48%,
+    rgba(15, 8, 51, 1) 100%
+  );
+
   box-shadow: var(--dark-shadow);
   color: white;
   min-height: 25vh;

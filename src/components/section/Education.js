@@ -56,6 +56,8 @@ const EducationContainer = styled.div`
   border-radius: 10px;
   margin: 20px 0;
   cursor: pointer;
+  background: var(--background-color);
+  color: white;
   &:hover {
     background-color: white;
   }

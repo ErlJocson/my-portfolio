@@ -24,7 +24,7 @@ function Project() {
         {showProject1 ? (
           <div>
             <ul>
-              <li>Build using Python (Django) and bootstrap</li>
+              <li>Built using Python (Django) and bootstrap</li>
               <li>
                 This project allows users to create an account and post
                 reminders. Users can delete their reminders and their account.
@@ -225,7 +225,8 @@ const ProjectContainer = styled.div`
   border-radius: 10px;
   margin: 20px 0;
   cursor: pointer;
-
+  background: var(--background-color);
+  color: white;
   &:hover {
     background-color: white;
   }

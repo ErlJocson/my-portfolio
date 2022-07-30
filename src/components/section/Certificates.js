@@ -162,10 +162,13 @@ export default Certificates;
 const CertificateContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
+
   justify-content: center;
   .certificate-details {
     padding: 20px;
     min-width: 300px;
+    background: var(--background-color);
+    color: white;
     box-shadow: var(--dark-shadow);
     border-radius: 10px;
     text-align: center;
