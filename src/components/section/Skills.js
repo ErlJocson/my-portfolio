@@ -1,6 +1,8 @@
-import Container from "./section-components/Container";
+import React from "react";
 import styled from "styled-components";
 import { useState } from "react";
+import { Fade, Zoom } from "react-reveal";
+import Container from "./section-components/Container";
 
 function Skills() {
   const [showProgrammingSkill, setShowProgrammingSkill] = useState(false);
@@ -9,79 +11,91 @@ function Skills() {
 
   return (
     <Container>
-      <SkillsContainer
-        onClick={() => setShowProgrammingSkill(!showProgrammingSkill)}
-      >
-        <div className="skill-header">
+      <Fade bottom>
+        <SkillsContainer
+          onClick={() => setShowProgrammingSkill(!showProgrammingSkill)}
+        >
+          <div className="skill-header">
+            {showProgrammingSkill ? (
+              <i className="fa-solid fa-minus red"></i>
+            ) : (
+              <i className="fa-solid fa-plus green"></i>
+            )}
+            <h3>Programming skills</h3>
+          </div>
           {showProgrammingSkill ? (
-            <i className="fa-solid fa-minus red"></i>
+            <div className="skill-container">
+              <ul>
+                <Zoom>
+                  <li>Python</li>
+                  <li>Flask</li>
+                  <li>Django</li>
+                  <li>JavaScript</li>
+                  <li>React</li>
+                  <li>SQL</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </Zoom>
+              </ul>
+            </div>
           ) : (
-            <i className="fa-solid fa-plus green"></i>
+            ""
           )}
-          <h3>Programming skills</h3>
-        </div>
-        {showProgrammingSkill ? (
-          <div className="skill-container">
-            <ul>
-              <li>Python</li>
-              <li>Flask</li>
-              <li>Django</li>
-              <li>JavaScript</li>
-              <li>React</li>
-              <li>SQL</li>
-              <li>HTML</li>
-              <li>CSS</li>
-            </ul>
+        </SkillsContainer>
+      </Fade>
+      <Fade bottom>
+        <SkillsContainer onClick={() => setShowToolsSkill(!showToolsSkill)}>
+          <div className="skill-header">
+            {showToolsSkill ? (
+              <i className="fa-solid fa-minus red"></i>
+            ) : (
+              <i className="fa-solid fa-plus green"></i>
+            )}
+            <h3>Tools and technologies</h3>
           </div>
-        ) : (
-          ""
-        )}
-      </SkillsContainer>
-      <SkillsContainer onClick={() => setShowToolsSkill(!showToolsSkill)}>
-        <div className="skill-header">
           {showToolsSkill ? (
-            <i className="fa-solid fa-minus red"></i>
+            <div className="skill-container">
+              <ul>
+                <Zoom>
+                  <li>Visual studio code</li>
+                  <li>Postman</li>
+                  <li>Windows</li>
+                  <li>Ubuntu</li>
+                  <li>GIT</li>
+                  <li>GitHub</li>
+                </Zoom>
+              </ul>
+            </div>
           ) : (
-            <i className="fa-solid fa-plus green"></i>
+            ""
           )}
-          <h3>Tools and technologies</h3>
-        </div>
-        {showToolsSkill ? (
-          <div className="skill-container">
-            <ul>
-              <li>Visual studio code</li>
-              <li>Postman</li>
-              <li>Windows</li>
-              <li>Ubuntu</li>
-              <li>GIT</li>
-              <li>GitHub</li>
-            </ul>
+        </SkillsContainer>
+      </Fade>
+      <Fade bottom>
+        <SkillsContainer onClick={() => setShowSoftSkill(!showSoftSkill)}>
+          <div className="skill-header">
+            {showSoftSkill ? (
+              <i className="fa-solid fa-minus red"></i>
+            ) : (
+              <i className="fa-solid fa-plus green"></i>
+            )}
+            <h3>Soft skills</h3>
           </div>
-        ) : (
-          ""
-        )}
-      </SkillsContainer>
-      <SkillsContainer onClick={() => setShowSoftSkill(!showSoftSkill)}>
-        <div className="skill-header">
           {showSoftSkill ? (
-            <i className="fa-solid fa-minus red"></i>
+            <div className="skill-container">
+              <ul>
+                <Zoom>
+                  <li>Problem-solving</li>
+                  <li>Analytical thinking</li>
+                  <li>Teamwork</li>
+                </Zoom>
+              </ul>
+            </div>
           ) : (
-            <i className="fa-solid fa-plus green"></i>
+            ""
           )}
-          <h3>Soft skills</h3>
-        </div>
-        {showSoftSkill ? (
-          <div className="skill-container">
-            <ul>
-              <li>Problem-solving</li>
-              <li>Analytical thinking</li>
-              <li>Teamwork</li>
-            </ul>
-          </div>
-        ) : (
-          ""
-        )}
-      </SkillsContainer>
+        </SkillsContainer>
+      </Fade>
     </Container>
   );
 }

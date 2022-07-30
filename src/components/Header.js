@@ -1,3 +1,4 @@
+import React from "react";
 import styled from "styled-components";
 
 function Header() {
@@ -35,7 +36,6 @@ const HeaderContainer = styled.div`
     text-align: center;
   }
   display: flex;
-  text-shadow: var(--text-shadow);
   flex-direction: column;
   justify-content: center;
   align-items: center;
