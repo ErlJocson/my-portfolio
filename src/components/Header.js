@@ -35,6 +35,7 @@ const HeaderContainer = styled.div`
     text-align: center;
   }
   display: flex;
+  text-shadow: var(--text-shadow);
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -45,7 +46,6 @@ const HeaderContainer = styled.div`
     rgba(57, 82, 88, 1) 48%,
     rgba(15, 8, 51, 1) 100%
   );
-
   box-shadow: var(--dark-shadow);
   color: white;
   min-height: 25vh;
