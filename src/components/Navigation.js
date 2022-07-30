@@ -34,6 +34,19 @@ const MyLink = styled(Link)`
   &:hover {
     color: #424242;
   }
+
+  @media screen and (max-width: 1200px) {
+    & {
+      font-size: 20px;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    & {
+      font-size: 15px;
+      text-align: center;
+    }
+  }
 `;
 
 const MyNavigation = styled.div`

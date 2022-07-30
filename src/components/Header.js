@@ -31,6 +31,9 @@ function Header() {
 export default Header;
 
 const HeaderContainer = styled.div`
+  h1 {
+    text-align: center;
+  }
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -38,7 +41,9 @@ const HeaderContainer = styled.div`
   background-color: #0f0b0b;
   box-shadow: var(--dark-shadow);
   color: white;
-  height: 25vh;
+  min-height: 25vh;
+  overflow: hidden;
+  padding: 20px;
   ul {
     display: flex;
     li {
@@ -55,6 +60,40 @@ const HeaderContainer = styled.div`
       i {
         font-size: 25px;
         margin-right: 6px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    & {
+      ul {
+        justify-content: center;
+        align-items: center;
+        li {
+          margin: 20px;
+          margin-bottom: 0px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    & {
+      h1 {
+        font-size: 25px;
+      }
+      ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        li {
+          margin: 20px;
+          margin-bottom: 0px;
+          i {
+            font-size: 20px;
+          }
+        }
       }
     }
   }
