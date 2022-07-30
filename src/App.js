@@ -1,7 +1,12 @@
 import styled from "styled-components";
 import Header from "./components/Header";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Skills, Education, Project } from "./components/Section.js";
+import {
+  Skills,
+  Education,
+  Project,
+  Certificates,
+} from "./components/Section.js";
 import Navigation from "./components/Navigation";
 
 function App() {
@@ -14,6 +19,7 @@ function App() {
           <Route element={<Skills />} path="/my-portfolio" />
           <Route element={<Education />} path="/education" />
           <Route element={<Project />} path="/project" />
+          <Route element={<Certificates />} path="/certificates" />
         </Routes>
       </BrowserRouter>
     </MainContainer>

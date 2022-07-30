@@ -110,13 +110,6 @@ const SkillsContainer = styled.div`
   .skill-header {
     display: flex;
     align-items: center;
-    .red {
-      color: red;
-    }
-
-    .green {
-      color: green;
-    }
 
     i {
       margin-right: 6px;

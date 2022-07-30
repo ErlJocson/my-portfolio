@@ -3,17 +3,23 @@ import { Link } from "react-router-dom";
 
 function Navigation() {
   return (
-    <MyNavigation>
-      <MyLink to="/my-portfolio">
-        <i class="fa-solid fa-person-digging"></i> Skills
-      </MyLink>
-      <MyLink to="/education">
-        <i class="fa-solid fa-graduation-cap"></i> Education
-      </MyLink>
-      <MyLink to="/project">
-        <i class="fa-solid fa-file-code"></i> Project
-      </MyLink>
-    </MyNavigation>
+    <>
+      <MyNavigation>
+        <MyLink to="/my-portfolio">
+          <i class="fa-solid fa-person-digging"></i> Skills
+        </MyLink>
+        <MyLink to="/education">
+          <i class="fa-solid fa-graduation-cap"></i> Education
+        </MyLink>
+        <MyLink to="/project">
+          <i class="fa-solid fa-file-code"></i> Project
+        </MyLink>
+        <MyLink to="/certificates">
+          <i class="fa-solid fa-certificate"></i> Certificates
+        </MyLink>
+      </MyNavigation>
+      <hr />
+    </>
   );
 }
 
@@ -32,6 +38,6 @@ const MyLink = styled(Link)`
 
 const MyNavigation = styled.div`
   display: flex;
-  margin: 20px 0;
+  margin: 30px 0;
   justify-content: space-around;
 `;
