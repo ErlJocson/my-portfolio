@@ -237,6 +237,9 @@ const ProjectContainer = styled.div`
       margin-left: 60px;
       li {
         margin: 4px 0;
+        a {
+          color: gray;
+        }
       }
     }
   }
