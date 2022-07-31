@@ -132,4 +132,12 @@ const SkillsContainer = styled.div`
       font-weight: bold;
     }
   }
+
+  @media screen and (max-width: 800px) {
+    .skill-container {
+      ul {
+        margin-left: 40px;
+      }
+    }
+  }
 `;

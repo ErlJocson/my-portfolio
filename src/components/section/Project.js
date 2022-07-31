@@ -270,4 +270,12 @@ const ProjectContainer = styled.div`
       }
     }
   }
+
+  @media screen and (max-width: 800px) {
+    div {
+      ul {
+        margin-left: 40px;
+      }
+    }
+  }
 `;
