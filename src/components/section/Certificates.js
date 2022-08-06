@@ -179,6 +179,95 @@ function Certificates() {
           </div>
         </Fade>
       </CertificateContainer>
+      <Fade bottom>
+        <Title>Other Certificates</Title>
+      </Fade>
+      <CertificateContainer style={{ marginBottom: "30px" }}>
+        <Fade bottom>
+          <div
+            className="certificate-details"
+            onClick={() => {
+              openCertificate(
+                "https://drive.google.com/file/d/1a_yBwWtaRjOxELoQco93N2b41IKyQjzH/view?usp=sharing"
+              );
+            }}
+          >
+            <h3>Analytics, Modelling, and Data Science</h3>
+            <p>Laguna State Polytechnic University</p>
+            <span>August 2021</span>
+          </div>
+        </Fade>
+        <Fade bottom>
+          <div
+            className="certificate-details"
+            onClick={() => {
+              openCertificate(
+                "https://drive.google.com/file/d/1adkK7mdvvtmflDZGiJEMxDsmejxRCIA-/view?usp=sharing"
+              );
+            }}
+          >
+            <h3>Introduction to Data Analysis</h3>
+            <p>New Era University</p>
+            <span>September 2021</span>
+          </div>
+        </Fade>
+        <Fade bottom>
+          <div
+            className="certificate-details"
+            onClick={() => {
+              openCertificate(
+                "https://drive.google.com/file/d/1VJN_LkpT-dgz3iDZm9plGjGQiQxvn4iC/view?usp=sharing"
+              );
+            }}
+          >
+            <h3>Data Analytics with Excel for beginners</h3>
+            <p>refocus</p>
+            <span> -- </span>
+          </div>
+        </Fade>
+        <Fade bottom>
+          <div
+            className="certificate-details"
+            onClick={() => {
+              openCertificate(
+                "https://drive.google.com/file/d/1FLLIHnh5C8gJ4jdFKlWZBuZkuoVaT7oX/view?usp=sharing"
+              );
+            }}
+          >
+            <h3>How to Start Data Analystics with Python and SQL</h3>
+            <p>refocus</p>
+            <span> -- </span>
+          </div>
+        </Fade>
+        <Fade bottom>
+          <div
+            className="certificate-details"
+            onClick={() => {
+              openCertificate(
+                "https://drive.google.com/file/d/1oSQojMldXOSwhIAqo6W3fZJew7atU9ra/view?usp=sharing"
+              );
+            }}
+          >
+            <h3>Oral and Visual Presentation of Research</h3>
+            <p>University of the Philippines</p>
+            <span>May 2022</span>
+          </div>
+        </Fade>
+        <Fade bottom>
+          <div
+            className="certificate-details"
+            onClick={() => {
+              openCertificate(
+                "https://drive.google.com/file/d/11p8qLLHwxvqeN0gYWqUky_1AliAfeMP3/view?usp=sharing"
+              );
+            }}
+          >
+            <h3>Writing the Manuscript and Getting Published</h3>
+            <p>University of the Philippines</p>
+            <span>May 2022</span>
+          </div>
+        </Fade>
+      </CertificateContainer>
     </Container>
   );
 }
@@ -204,4 +293,9 @@ const CertificateContainer = styled.div`
       cursor: pointer;
     }
   }
+`;
+
+const Title = styled.h1`
+  text-align: center;
+  margin: 20px 0;
 `;
