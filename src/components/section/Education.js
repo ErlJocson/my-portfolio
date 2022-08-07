@@ -60,7 +60,14 @@ export default Education;
 const EducationContainer = styled.div`
   box-shadow: var(--dark-shadow);
   padding: 20px;
-  border-radius: 10px;
+  border: 6px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+    to left,
+    rgba(230, 131, 131, 1) 0%,
+    rgba(255, 255, 255, 1) 46%,
+    rgba(144, 195, 210, 1) 99%
+  );
   margin: 20px 0;
   cursor: pointer;
   background: var(--background-color);

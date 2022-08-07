@@ -180,7 +180,7 @@ function Certificates() {
         </Fade>
       </CertificateContainer>
       <Fade bottom>
-        <Title>Other Certificates</Title>
+        <Title>OTHER CERTIFICATES</Title>
       </Fade>
       <CertificateContainer style={{ marginBottom: "30px" }}>
         <Fade bottom>
@@ -285,7 +285,14 @@ const CertificateContainer = styled.div`
     background: var(--background-color);
     color: white;
     box-shadow: var(--dark-shadow);
-    border-radius: 10px;
+    border: 6px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(
+      to left,
+      rgba(230, 131, 131, 1) 0%,
+      rgba(255, 255, 255, 1) 46%,
+      rgba(144, 195, 210, 1) 99%
+    );
     text-align: center;
     margin: 10px;
     &:hover {
