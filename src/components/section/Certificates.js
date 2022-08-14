@@ -13,7 +13,7 @@ function Certificates() {
       <CertificateContainer>
         <Fade bottom>
           <div
-            className="certificate-details"
+            className="certificate-details gray-hover"
             onClick={() =>
               openCertificate(
                 "https://drive.google.com/file/d/1wU2WkOgujhnZJQxcjks9u4U6dpZ0xMb9/view?usp=sharing"

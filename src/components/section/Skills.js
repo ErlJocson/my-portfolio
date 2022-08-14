@@ -15,7 +15,7 @@ function Skills() {
         <SkillsContainer
           onClick={() => setShowProgrammingSkill(!showProgrammingSkill)}
         >
-          <div className="skill-header">
+          <div className="skill-header gray-hover">
             {showProgrammingSkill ? (
               <i className="fa-solid fa-minus red"></i>
             ) : (
@@ -45,7 +45,7 @@ function Skills() {
       </Fade>
       <Fade bottom>
         <SkillsContainer onClick={() => setShowToolsSkill(!showToolsSkill)}>
-          <div className="skill-header">
+          <div className="skill-header gray-hover">
             {showToolsSkill ? (
               <i className="fa-solid fa-minus red"></i>
             ) : (
@@ -73,7 +73,7 @@ function Skills() {
       </Fade>
       <Fade bottom>
         <SkillsContainer onClick={() => setShowSoftSkill(!showSoftSkill)}>
-          <div className="skill-header">
+          <div className="skill-header gray-hover">
             {showSoftSkill ? (
               <i className="fa-solid fa-minus red"></i>
             ) : (

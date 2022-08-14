@@ -16,7 +16,7 @@ function Project() {
     <Container>
       <Fade bottom>
         <ProjectContainer onClick={() => setShowProject1(!showProject1)}>
-          <h3>
+          <h3 className="gray-hover">
             {showProject1 ? (
               <i className="fa-solid fa-minus red"></i>
             ) : (
@@ -54,7 +54,7 @@ function Project() {
       </Fade>
       <Fade bottom>
         <ProjectContainer onClick={() => setShowProject2(!showProject2)}>
-          <h3>
+          <h3 className="gray-hover">
             {showProject2 ? (
               <i className="fa-solid fa-minus red"></i>
             ) : (
@@ -95,7 +95,7 @@ function Project() {
       </Fade>
       <Fade bottom>
         <ProjectContainer onClick={() => setShowProject3(!showProject3)}>
-          <h3>
+          <h3 className="gray-hover">
             {showProject3 ? (
               <i className="fa-solid fa-minus red"></i>
             ) : (
@@ -131,7 +131,7 @@ function Project() {
       </Fade>
       <Fade bottom>
         <ProjectContainer onClick={() => setShowProject4(!showProject4)}>
-          <h3>
+          <h3 className="gray-hover">
             {showProject4 ? (
               <i className="fa-solid fa-minus red"></i>
             ) : (
@@ -168,7 +168,7 @@ function Project() {
       </Fade>
       <Fade bottom>
         <ProjectContainer onClick={() => setShowProject5(!showProject5)}>
-          <h3>
+          <h3 className="gray-hover">
             {showProject5 ? (
               <i className="fa-solid fa-minus red"></i>
             ) : (
@@ -205,7 +205,7 @@ function Project() {
       </Fade>
       <Fade bottom>
         <ProjectContainer onClick={() => setShowProject6(!showProject6)}>
-          <h3>
+          <h3 className="gray-hover">
             {showProject6 ? (
               <i className="fa-solid fa-minus red"></i>
             ) : (

@@ -32,3 +32,7 @@ code {
 .green {
   color: green;
 }
+
+.gray-hover:hover {
+  color: gray;
+}
