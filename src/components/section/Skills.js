@@ -143,8 +143,9 @@ const SkillsContainer = styled.div`
       padding: 15px;
       text-transform: uppercase;
       font-weight: bolder;
-      box-shadow: var(--dark-shadow);
-      margin: 10px;
+      box-shadow: 8px 0px #0db3e6, -8px 0px #0db3e6, 0px 8px #0db3e6,
+        0px -8px #0db3e6, 0px 18px #2979ff, -8px 13px #2a6cda, 8px 13px #2a6cda;
+      margin: 20px;
       text-align: center;
       background-color: aliceblue;
       border-radius: 10px;
