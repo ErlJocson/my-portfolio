@@ -9,6 +9,27 @@ function Skills() {
   const [showToolsSkill, setShowToolsSkill] = useState(false);
   const [showSoftSkill, setShowSoftSkill] = useState(false);
 
+  const programmingSkills = [
+    "Python",
+    "Flask",
+    "Django",
+    "JavaScript",
+    "React",
+    "SQL",
+    "HTML",
+    "CSS",
+  ];
+  const tools = [
+    "Visual studio code",
+    "Postman",
+    "Windows",
+    "Ubuntu",
+    "GIT",
+    "GitHub",
+  ];
+
+  const softSkills = ["Problem-solving", "Analytical thinking", "Teamwork"];
+
   return (
     <Container>
       <Fade bottom>
@@ -25,18 +46,13 @@ function Skills() {
           </div>
           {showProgrammingSkill ? (
             <div className="skill-container">
-              <ul>
-                <Zoom>
-                  <li>Python</li>
-                  <li>Flask</li>
-                  <li>Django</li>
-                  <li>JavaScript</li>
-                  <li>React</li>
-                  <li>SQL</li>
-                  <li>HTML</li>
-                  <li>CSS</li>
-                </Zoom>
-              </ul>
+              {programmingSkills.map((skills, id) => {
+                return (
+                  <Zoom key={id}>
+                    <div>{skills}</div>
+                  </Zoom>
+                );
+              })}
             </div>
           ) : (
             ""
@@ -55,16 +71,13 @@ function Skills() {
           </div>
           {showToolsSkill ? (
             <div className="skill-container">
-              <ul>
-                <Zoom>
-                  <li>Visual studio code</li>
-                  <li>Postman</li>
-                  <li>Windows</li>
-                  <li>Ubuntu</li>
-                  <li>GIT</li>
-                  <li>GitHub</li>
-                </Zoom>
-              </ul>
+              {tools.map((skill, id) => {
+                return (
+                  <Zoom key={id}>
+                    <div>{skill}</div>
+                  </Zoom>
+                );
+              })}
             </div>
           ) : (
             ""
@@ -83,13 +96,13 @@ function Skills() {
           </div>
           {showSoftSkill ? (
             <div className="skill-container">
-              <ul>
-                <Zoom>
-                  <li>Problem-solving</li>
-                  <li>Analytical thinking</li>
-                  <li>Teamwork</li>
-                </Zoom>
-              </ul>
+              {softSkills.map((skill, id) => {
+                return (
+                  <Zoom key={id}>
+                    <div>{skill}</div>
+                  </Zoom>
+                );
+              })}
             </div>
           ) : (
             ""
@@ -121,14 +134,24 @@ const SkillsContainer = styled.div`
   color: white;
 
   .skill-container {
-    ul {
-      margin-top: 10px;
-      margin-left: 60px;
-      li {
-        margin: 4px 0;
-      }
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    div {
+      padding: 15px;
+      text-transform: uppercase;
+      font-weight: bolder;
+      box-shadow: var(--dark-shadow);
+      margin: 10px;
+      text-align: center;
+      background-color: aliceblue;
+      border-radius: 10px;
+      color: black;
     }
   }
+
   .skill-header {
     display: flex;
     align-items: center;
@@ -139,11 +162,11 @@ const SkillsContainer = styled.div`
     }
   }
 
-  @media screen and (max-width: 800px) {
+  /* @media screen and (max-width: 800px) {
     .skill-container {
       ul {
         margin-left: 40px;
       }
     }
-  }
+  } */
 `;
