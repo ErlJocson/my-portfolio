@@ -26,6 +26,7 @@ function Project() {
           </h3>
           {showProject1 ? (
             <div>
+              <img src="images/images/reminder-app.png" alt="" />
               <ul>
                 <Zoom>
                   <li>Built using Python (Django) and bootstrap</li>
@@ -64,6 +65,7 @@ function Project() {
           </h3>
           {showProject2 ? (
             <div>
+              <img src="images/images/ecom.png" alt="" />
               <Zoom>
                 <ul>
                   <li>Built using Python (Django)</li>
@@ -105,6 +107,7 @@ function Project() {
           </h3>
           {showProject3 ? (
             <div>
+              <img src="images/images/random-quote.png" alt="" />
               <Zoom>
                 <ul>
                   <li>
@@ -141,6 +144,7 @@ function Project() {
           </h3>
           {showProject4 ? (
             <div>
+              <img src="images/images/css-template.png" alt="" />
               <Zoom>
                 <ul>
                   <li>
@@ -178,6 +182,7 @@ function Project() {
           </h3>
           {showProject5 ? (
             <div>
+              <img src="images/images/css-animations.png" alt="" />
               <Zoom>
                 <ul>
                   <li>
@@ -215,6 +220,7 @@ function Project() {
           </h3>
           {showProject6 ? (
             <div>
+              <img src="images/images/port.png" alt="" />
               <Zoom>
                 <ul>
                   <li>Built using React.js and styled components</li>
@@ -268,6 +274,14 @@ const ProjectContainer = styled.div`
   }
 
   div {
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    img {
+      width: 800px;
+      height: 550px;
+      box-shadow: 0 2px 10px gray;
+    }
     ul {
       margin-top: 10px;
       margin-left: 60px;
@@ -280,8 +294,22 @@ const ProjectContainer = styled.div`
     }
   }
 
+  @media screen and (max-width: 1200px) {
+    div {
+      flex-direction: column;
+      img {
+        width: 600px;
+        height: 350px;
+      }
+    }
+  }
+
   @media screen and (max-width: 800px) {
     div {
+      img {
+        width: 300px;
+        height: 150px;
+      }
       ul {
         margin-left: 40px;
       }
