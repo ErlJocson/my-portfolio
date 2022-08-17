@@ -281,7 +281,7 @@ const CertificateContainer = styled.div`
   justify-content: center;
   .certificate-details {
     padding: 20px;
-    min-width: 300px;
+    min-width: 100px;
     background: var(--background-color);
     color: white;
     box-shadow: var(--dark-shadow);
