@@ -14,7 +14,7 @@ function Education() {
           </div>
           <div className="contents">
             <p>Bachelor of Science in Mathematics</p>
-            <span>2018-2022</span>
+            <span>2018-2022 (Graduation Date: September 22, 2022)</span>
           </div>
           {showDetails ? (
             <div className="other-details">
