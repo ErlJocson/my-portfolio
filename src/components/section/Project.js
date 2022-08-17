@@ -26,7 +26,12 @@ function Project() {
           </h3>
           {showProject1 ? (
             <div>
-              <img src={process.env.PUBLIC_URL + "/reminder-app.png"} alt="" />
+              <Zoom>
+                <img
+                  src={process.env.PUBLIC_URL + "/reminder-app.png"}
+                  alt=""
+                />
+              </Zoom>
               <ul>
                 <Zoom>
                   <li>Built using Python (Django) and bootstrap</li>
@@ -65,7 +70,9 @@ function Project() {
           </h3>
           {showProject2 ? (
             <div>
-              <img src={process.env.PUBLIC_URL + "/ecom.png"} alt="" />
+              <Zoom>
+                <img src={process.env.PUBLIC_URL + "/ecom.png"} alt="" />
+              </Zoom>
               <Zoom>
                 <ul>
                   <li>Built using Python (Django)</li>
@@ -107,7 +114,12 @@ function Project() {
           </h3>
           {showProject3 ? (
             <div>
-              <img src={process.env.PUBLIC_URL + "/random-quote.png"} alt="" />
+              <Zoom>
+                <img
+                  src={process.env.PUBLIC_URL + "/random-quote.png"}
+                  alt=""
+                />
+              </Zoom>
               <Zoom>
                 <ul>
                   <li>
@@ -144,7 +156,12 @@ function Project() {
           </h3>
           {showProject4 ? (
             <div>
-              <img src={process.env.PUBLIC_URL + "/css-template.png"} alt="" />
+              <Zoom>
+                <img
+                  src={process.env.PUBLIC_URL + "/css-template.png"}
+                  alt=""
+                />
+              </Zoom>
               <Zoom>
                 <ul>
                   <li>
@@ -182,10 +199,12 @@ function Project() {
           </h3>
           {showProject5 ? (
             <div>
-              <img
-                src={process.env.PUBLIC_URL + "/css-animations.png"}
-                alt=""
-              />
+              <Zoom>
+                <img
+                  src={process.env.PUBLIC_URL + "/css-animations.png"}
+                  alt=""
+                />
+              </Zoom>
               <Zoom>
                 <ul>
                   <li>
@@ -223,7 +242,9 @@ function Project() {
           </h3>
           {showProject6 ? (
             <div>
-              <img src={process.env.PUBLIC_URL + "/port.png"} alt="" />
+              <Zoom>
+                <img src={process.env.PUBLIC_URL + "/port.png"} alt="" />
+              </Zoom>
               <Zoom>
                 <ul>
                   <li>Built using React.js and styled components</li>
