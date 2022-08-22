@@ -302,8 +302,8 @@ const ProjectContainer = styled.div`
     display: flex;
     align-items: center;
     img {
-      width: 800px;
-      height: 550px;
+      width: 600px;
+      height: 350px;
       box-shadow: 0 2px 10px gray;
     }
     ul {
