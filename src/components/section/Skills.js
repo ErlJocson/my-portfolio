@@ -15,7 +15,6 @@ function Skills() {
     "Django",
     "JavaScript",
     "React",
-    "Java",
     "SQL",
     "HTML",
     "CSS",
