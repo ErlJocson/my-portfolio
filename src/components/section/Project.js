@@ -11,7 +11,7 @@ function Project() {
   const [showProject4, setShowProject4] = useState(false);
   const [showProject5, setShowProject5] = useState(false);
   const [showProject6, setShowProject6] = useState(false);
-
+  const [showProject7, setShowProject7] = useState(false);
   return (
     <Container>
       <Fade bottom>
@@ -58,6 +58,48 @@ function Project() {
           )}
         </ProjectContainer>
       </Fade>
+
+      <Fade bottom>
+        <ProjectContainer onClick={() => setShowProject7(!showProject7)}>
+          <h3 className="gray-hover">
+            {showProject7 ? (
+              <i className="fa-solid fa-minus red"></i>
+            ) : (
+              <i className="fa-solid fa-plus green"></i>
+            )}{" "}
+            Quotes API
+          </h3>
+          {showProject7 ? (
+            <div>
+              <Zoom>
+                <img src={process.env.PUBLIC_URL + "/quotesAPI.png"} alt="" />
+              </Zoom>
+              <ul>
+                <Zoom>
+                  <li>Built using Java (spring framework)</li>
+                  <li>
+                    This project allows anyone to upload a quote into a
+                    database.
+                  </li>
+                  <li>Deployed in Heroku</li>
+                  <li>
+                    <a
+                      href="https://erljocson.github.io/quote-documentation/"
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Click here to view the documentation
+                    </a>
+                  </li>
+                </Zoom>
+              </ul>
+            </div>
+          ) : (
+            ""
+          )}
+        </ProjectContainer>
+      </Fade>
+
       <Fade bottom>
         <ProjectContainer onClick={() => setShowProject2(!showProject2)}>
           <h3 className="gray-hover">
