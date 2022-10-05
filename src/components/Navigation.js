@@ -33,7 +33,7 @@ const MyLink = styled(Link)`
   color: black;
   text-decoration: none;
   &:hover {
-    color: #424242;
+    color: gray;
   }
 
   @media screen and (max-width: 1200px) {
@@ -52,6 +52,6 @@ const MyLink = styled(Link)`
 
 const MyNavigation = styled.div`
   display: flex;
-  margin: 30px 0;
+  margin: 10px 0;
   justify-content: space-around;
 `;
