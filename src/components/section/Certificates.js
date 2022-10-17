@@ -13,7 +13,7 @@ function Certificates() {
       <CertificateContainer>
         <Fade bottom>
           <div
-            className="certificate-details gray-hover"
+            className="certificate-details"
             onClick={() =>
               openCertificate(
                 "https://drive.google.com/file/d/1wU2WkOgujhnZJQxcjks9u4U6dpZ0xMb9/view?usp=sharing"
@@ -299,6 +299,10 @@ const CertificateContainer = styled.div`
       background-color: white;
       cursor: pointer;
     }
+  }
+
+  .certificate-details:hover {
+    background: rgba(2, 0, 36, 1);
   }
 `;
 
