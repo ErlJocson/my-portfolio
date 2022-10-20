@@ -1,30 +1,19 @@
 import React from "react";
 import styled from "styled-components";
-
+import { Fade } from "react-reveal";
 function Header() {
   return (
     <HeaderContainer>
-      <h1>ERL JERRALD JOCSON</h1>
-      <ul>
-        <li>
-          <i class="fa-regular fa-envelope"></i> jocsonerl@gmail.com
-        </li>
-        <li>
-          <i class="fa-solid fa-phone"></i> 0939-784-5820
-        </li>
-        <li>
-          <a
-            href="https://github.com/ErlJocson"
-            target={"_blank"}
-            rel="noreferrer"
-          >
-            <i class="fa-brands fa-github"></i> GitHub
-          </a>
-        </li>
-        <li>
-          <i class="fa-solid fa-location-dot"></i> Magdalena, Laguna
-        </li>
-      </ul>
+      <div>
+        <Fade bottom>
+          <img src={process.env.PUBLIC_URL + "/profile.jpeg"} alt="" />
+          <p>
+            <h1>ERL JERRALD JOCSON</h1>I graduated college on September 16, 2022
+            in <em>Laguna State Polytechnic University</em>, where i developed
+            problem solving and analytical thinking skills.
+          </p>
+        </Fade>
+      </div>
     </HeaderContainer>
   );
 }
@@ -32,8 +21,23 @@ function Header() {
 export default Header;
 
 const HeaderContainer = styled.div`
-  h1 {
+  div {
+    width: 800px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    img {
+      height: 400px;
+      box-shadow: var(--dark-shadow);
+      border-radius: 10px;
+      margin: 10px;
+    }
+    p {
+      h1 {
+        margin: 10px;
+        text-align: center;
+      }
+    }
   }
   display: flex;
   flex-direction: column;
@@ -46,61 +50,15 @@ const HeaderContainer = styled.div`
     rgba(57, 82, 88, 1) 48%,
     rgba(15, 8, 51, 1) 100%
   );
-  box-shadow: var(--dark-shadow);
   color: white;
-  min-height: 25vh;
   overflow: hidden;
+  height: 100vh;
   padding: 20px;
-  ul {
-    display: flex;
-    li {
-      list-style-type: none;
-      margin: 30px;
-      margin-bottom: 0px;
-      display: flex;
-      align-items: center;
-      a {
-        text-decoration: none;
-        color: white;
-      }
-
-      i {
-        font-size: 25px;
-        margin-right: 6px;
-      }
-    }
-  }
-
-  @media screen and (max-width: 1200px) {
-    & {
-      ul {
-        justify-content: center;
-        align-items: center;
-        li {
-          margin: 20px;
-          margin-bottom: 0px;
-          font-size: 14px;
-        }
-      }
-    }
-  }
 
   @media screen and (max-width: 800px) {
     & {
       h1 {
         font-size: 25px;
-      }
-      ul {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        li {
-          margin: 20px;
-          margin-bottom: 0px;
-          i {
-            font-size: 20px;
-          }
-        }
       }
     }
   }

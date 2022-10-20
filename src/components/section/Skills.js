@@ -1,14 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { useState } from "react";
-import { Fade, Zoom } from "react-reveal";
-import Container from "./section-components/Container";
+import { Fade } from "react-reveal";
 
 function Skills() {
-  const [showProgrammingSkill, setShowProgrammingSkill] = useState(false);
-  const [showToolsSkill, setShowToolsSkill] = useState(false);
-  const [showSoftSkill, setShowSoftSkill] = useState(false);
-
   const programmingSkills = [
     "Python",
     "Flask",
@@ -23,7 +17,7 @@ function Skills() {
     "Visual studio code",
     "Postman",
     "Windows",
-    "Ubuntu",
+    "Linux/Ubuntu",
     "GIT",
     "GitHub",
   ];
@@ -31,135 +25,90 @@ function Skills() {
   const softSkills = ["Problem-solving", "Analytical thinking", "Teamwork"];
 
   return (
-    <Container>
-      <Fade bottom>
-        <SkillsContainer
-          onClick={() => setShowProgrammingSkill(!showProgrammingSkill)}
-        >
-          <div className="skill-header gray-hover">
-            {showProgrammingSkill ? (
-              <i className="fa-solid fa-minus red"></i>
-            ) : (
-              <i className="fa-solid fa-plus green"></i>
-            )}
-            <h3>Programming skills</h3>
-          </div>
-          {showProgrammingSkill ? (
+    <>
+      <MySkillContainer>
+        <Fade bottom>
+          <SkillsContainer>
+            <div className="skill-header gray-hover">
+              <h3>Programming skills</h3>
+            </div>
             <div className="skill-container">
               {programmingSkills.map((skills, id) => {
-                return (
-                  <Zoom key={id}>
-                    <div>{skills}</div>
-                  </Zoom>
-                );
+                return <div key={id}>{skills}</div>;
               })}
             </div>
-          ) : (
-            ""
-          )}
-        </SkillsContainer>
-      </Fade>
-      <Fade bottom>
-        <SkillsContainer onClick={() => setShowToolsSkill(!showToolsSkill)}>
-          <div className="skill-header gray-hover">
-            {showToolsSkill ? (
-              <i className="fa-solid fa-minus red"></i>
-            ) : (
-              <i className="fa-solid fa-plus green"></i>
-            )}
-            <h3>Tools and technologies</h3>
-          </div>
-          {showToolsSkill ? (
+          </SkillsContainer>
+        </Fade>
+        <Fade bottom>
+          <SkillsContainer>
+            <div className="skill-header gray-hover">
+              <h3>Tools and technologies</h3>
+            </div>
             <div className="skill-container">
               {tools.map((skill, id) => {
-                return (
-                  <Zoom key={id}>
-                    <div>{skill}</div>
-                  </Zoom>
-                );
+                return <div key={id}>{skill}</div>;
               })}
             </div>
-          ) : (
-            ""
-          )}
-        </SkillsContainer>
-      </Fade>
-      <Fade bottom>
-        <SkillsContainer onClick={() => setShowSoftSkill(!showSoftSkill)}>
-          <div className="skill-header gray-hover">
-            {showSoftSkill ? (
-              <i className="fa-solid fa-minus red"></i>
-            ) : (
-              <i className="fa-solid fa-plus green"></i>
-            )}
-            <h3>Soft skills</h3>
-          </div>
-          {showSoftSkill ? (
+          </SkillsContainer>
+        </Fade>
+        <Fade bottom>
+          <SkillsContainer>
+            <div className="skill-header gray-hover">
+              <h3>Soft skills</h3>
+            </div>
             <div className="skill-container">
               {softSkills.map((skill, id) => {
-                return (
-                  <Zoom key={id}>
-                    <div>{skill}</div>
-                  </Zoom>
-                );
+                return <div key={id}>{skill}</div>;
               })}
             </div>
-          ) : (
-            ""
-          )}
-        </SkillsContainer>
-      </Fade>
-    </Container>
+          </SkillsContainer>
+        </Fade>
+      </MySkillContainer>
+    </>
   );
 }
 
 export default Skills;
 
-const SkillsContainer = styled.div`
-  box-shadow: var(--dark-shadow);
-  padding: 20px;
-  /*  */
-  border: 6px solid;
-  border-image-slice: 1;
-  border-image-source: linear-gradient(
-    to left,
-    rgba(230, 131, 131, 1) 0%,
-    rgba(255, 255, 255, 1) 46%,
-    rgba(144, 195, 210, 1) 99%
-  );
-  /*  */
-  margin: 20px 0;
-  cursor: pointer;
-  background: var(--background-color);
-  color: white;
+const MySkillContainer = styled.div`
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+`;
 
+const SkillsContainer = styled.div`
+  width: 300px;
+  padding: 20px;
+  margin: 20px;
+  background-color: white;
+  box-shadow: 8px 0px #0db3e6, -8px 0px #0db3e6, 0px 8px #0db3e6,
+    0px -8px #0db3e6, 0px 18px #2979ff, -8px 13px #2a6cda, 8px 13px #2a6cda;
+  border-radius: 10px;
   .skill-container {
-    margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
+    color: black;
     justify-content: center;
     align-items: center;
     div {
-      padding: 15px;
+      font-size: 12px;
       text-transform: uppercase;
       font-weight: bolder;
-      box-shadow: 8px 0px #0db3e6, -8px 0px #0db3e6, 0px 8px #0db3e6,
-        0px -8px #0db3e6, 0px 18px #2979ff, -8px 13px #2a6cda, 8px 13px #2a6cda;
-      margin: 20px;
+      margin: 15px;
       text-align: center;
-      background-color: aliceblue;
-      border-radius: 10px;
-      color: black;
+      border-bottom: solid 2px black;
     }
   }
 
   .skill-header {
     display: flex;
-    align-items: center;
-
-    i {
-      margin-right: 6px;
-      font-weight: bold;
+    h3 {
+      color: black;
+      text-transform: uppercase;
+      text-align: center;
+      width: 100%;
     }
   }
 `;

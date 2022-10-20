@@ -179,9 +179,7 @@ function Certificates() {
           </div>
         </Fade>
       </CertificateContainer>
-      <Fade bottom>
-        <Title>OTHER CERTIFICATES</Title>
-      </Fade>
+      <Fade bottom></Fade>
       <CertificateContainer style={{ marginBottom: "30px" }}>
         <Fade bottom>
           <div
@@ -277,36 +275,17 @@ export default Certificates;
 const CertificateContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
-
   justify-content: center;
   .certificate-details {
-    padding: 20px;
+    font-size: 15px;
+    padding: 10px;
     min-width: 100px;
-    background: var(--background-color);
-    color: white;
-    box-shadow: var(--dark-shadow);
-    border: 6px solid;
-    border-image-slice: 1;
-    border-image-source: linear-gradient(
-      to left,
-      rgba(230, 131, 131, 1) 0%,
-      rgba(255, 255, 255, 1) 46%,
-      rgba(144, 195, 210, 1) 99%
-    );
+    background-color: white;
     text-align: center;
     margin: 10px;
-    &:hover {
-      background-color: white;
-      cursor: pointer;
-    }
+    cursor: pointer;
   }
-
   .certificate-details:hover {
-    background: rgba(2, 0, 36, 1);
+    background-color: gray;
   }
-`;
-
-const Title = styled.h1`
-  text-align: center;
-  margin: 20px 0;
 `;

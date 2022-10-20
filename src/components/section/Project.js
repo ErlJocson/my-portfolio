@@ -340,7 +340,6 @@ function Project() {
 export default Project;
 
 const ProjectContainer = styled.div`
-  box-shadow: var(--dark-shadow);
   padding: 20px;
 
   border: 6px solid;
