@@ -39,6 +39,8 @@ const EducationContainer = styled.div`
   cursor: pointer;
   background: white;
   text-align: center;
+  box-shadow: var(--great-shadow);
+  border-radius: 10px;
   font-size: 15px;
   &:hover {
     background-color: white;

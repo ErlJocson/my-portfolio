@@ -277,12 +277,14 @@ const CertificateContainer = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   .certificate-details {
+    box-shadow: var(--great-shadow);
+    border-radius: 10px;
     font-size: 15px;
     padding: 10px;
     min-width: 100px;
     background-color: white;
     text-align: center;
-    margin: 10px;
+    margin: 15px;
     cursor: pointer;
   }
   .certificate-details:hover {

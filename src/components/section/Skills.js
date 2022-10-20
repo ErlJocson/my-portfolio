@@ -83,8 +83,7 @@ const SkillsContainer = styled.div`
   padding: 20px;
   margin: 20px;
   background-color: white;
-  box-shadow: 8px 0px #0db3e6, -8px 0px #0db3e6, 0px 8px #0db3e6,
-    0px -8px #0db3e6, 0px 18px #2979ff, -8px 13px #2a6cda, 8px 13px #2a6cda;
+  box-shadow: var(--great-shadow);
   border-radius: 10px;
   .skill-container {
     display: flex;

@@ -7,6 +7,9 @@
     rgba(57, 61, 88, 1) 48%,
     rgba(15, 8, 51, 1) 100%
   );
+
+  --great-shadow: 8px 0px #0db3e6, -8px 0px #0db3e6, 0px 8px #0db3e6,
+    0px -8px #0db3e6, 0px 18px #2979ff, -8px 13px #2a6cda, 8px 13px #2a6cda;
 }
 
 * {
