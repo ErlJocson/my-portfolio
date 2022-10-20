@@ -29,7 +29,6 @@ export default Education;
 const MyContainer = styled.div`
   min-height: 100vh;
   display: flex;
-  border: 1px solid white;
   align-items: center;
   justify-content: center;
   flex-direction: column;
