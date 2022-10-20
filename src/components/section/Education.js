@@ -6,8 +6,9 @@ import Certificates from "./Certificates";
 function Education() {
   return (
     <MyContainer>
-      <Fade bottom>
-        <EducationContainer>
+      <Title>Background Education</Title>
+      <EducationContainer>
+        <Fade bottom>
           <div className="header">
             <h3>Laguna State Polytechnic University</h3>
           </div>
@@ -15,8 +16,9 @@ function Education() {
             <p>Bachelor of Science in Mathematics</p>
             <span>2018-2022</span>
           </div>
-        </EducationContainer>
-      </Fade>
+        </Fade>
+      </EducationContainer>
+      <Title>Certificates</Title>
       <Certificates />
     </MyContainer>
   );
@@ -27,15 +29,14 @@ export default Education;
 const MyContainer = styled.div`
   min-height: 100vh;
   display: flex;
+  border: 1px solid white;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  border: solid white 1px;
 `;
 
 const EducationContainer = styled.div`
   padding: 10px;
-  margin: 20px 0;
   cursor: pointer;
   background: white;
   text-align: center;
@@ -51,4 +52,10 @@ const EducationContainer = styled.div`
       color: gray;
     }
   }
+`;
+
+const Title = styled.h3`
+  margin: 30px 0 18px 0;
+  color: white;
+  text-transform: uppercase;
 `;

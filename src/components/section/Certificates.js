@@ -1,5 +1,4 @@
 import React from "react";
-import Container from "./section-components/Container";
 import styled from "styled-components";
 import { Fade } from "react-reveal";
 
@@ -9,7 +8,7 @@ const openCertificate = (path) => {
 
 function Certificates() {
   return (
-    <Container>
+    <>
       <CertificateContainer>
         <Fade bottom>
           <div
@@ -179,8 +178,7 @@ function Certificates() {
           </div>
         </Fade>
       </CertificateContainer>
-      <Fade bottom></Fade>
-      <CertificateContainer style={{ marginBottom: "30px" }}>
+      <CertificateContainer>
         <Fade bottom>
           <div
             className="certificate-details"
@@ -266,7 +264,7 @@ function Certificates() {
           </div>
         </Fade>
       </CertificateContainer>
-    </Container>
+    </>
   );
 }
 
@@ -279,13 +277,22 @@ const CertificateContainer = styled.div`
   .certificate-details {
     box-shadow: var(--great-shadow);
     border-radius: 10px;
-    font-size: 15px;
     padding: 10px;
     min-width: 100px;
     background-color: white;
     text-align: center;
     margin: 15px;
     cursor: pointer;
+    h3 {
+      font-size: 14px;
+    }
+    p {
+      font-size: 12px;
+    }
+
+    span {
+      font-size: 12px;
+    }
   }
   .certificate-details:hover {
     background-color: gray;
