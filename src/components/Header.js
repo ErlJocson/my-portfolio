@@ -8,9 +8,9 @@ function Header() {
         <Fade bottom>
           <img src={process.env.PUBLIC_URL + "/profile.jpeg"} alt="" />
           <p>
-            <h1>ERL JERRALD JOCSON</h1>I graduated college on September 16, 2022
-            in <em>Laguna State Polytechnic University</em>, where i developed
-            problem solving and analytical thinking skills.
+            <h1>ERL JERRALD JOCSON</h1>I graduated from college on September 16,
+            2022 in <em>Laguna State Polytechnic University</em>, where i
+            developed problem solving and analytical thinking skills.
           </p>
         </Fade>
       </div>
