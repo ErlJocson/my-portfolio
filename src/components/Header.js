@@ -21,6 +21,7 @@ function Header() {
 export default Header;
 
 const HeaderContainer = styled.div`
+  box-shadow: var(--dark-shadow);
   div {
     width: 800px;
     text-align: center;
