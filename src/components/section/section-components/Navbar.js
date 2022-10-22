@@ -36,6 +36,7 @@ const NavbarContainer = styled.nav`
   align-items: center;
   justify-content: space-around;
   font-family: "Times New Roman", Times, serif;
+  background-color: rgba(0, 0, 0, 0.6);
   div {
     text-transform: uppercase;
     font-weight: bold;

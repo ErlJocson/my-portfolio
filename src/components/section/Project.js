@@ -168,7 +168,7 @@ const MyContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 60px 0;
+  padding-top: 60px;
 `;
 
 const Projects = styled.div`
@@ -198,6 +198,10 @@ const ProjectContainer = styled.div`
       font-size: 12px;
       a {
         color: gray;
+      }
+
+      a:hover {
+        color: black;
       }
     }
   }

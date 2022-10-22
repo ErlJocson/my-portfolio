@@ -32,7 +32,8 @@ const MyContainer = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 60px 0;
+  padding-top: 60px;
+  margin-bottom: 10px;
 `;
 
 const EducationContainer = styled.div`

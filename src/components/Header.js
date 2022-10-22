@@ -4,16 +4,21 @@ import { Fade } from "react-reveal";
 function Header() {
   return (
     <HeaderContainer id="header">
-      <div>
-        <Fade bottom>
-          <img src={process.env.PUBLIC_URL + "/profile.jpeg"} alt="" />
+      <Fade bottom>
+        <img src={process.env.PUBLIC_URL + "/profile.jpeg"} alt="" />
+        <div>
+          <h1>ERL JERRALD JOCSON</h1>
           <p>
-            <h1>ERL JERRALD JOCSON</h1>I graduated from college on September 16,
-            2022 in <em>Laguna State Polytechnic University</em>, where i
-            developed problem solving and analytical thinking skills.
+            I graduated in college on September 16, 2022 from{" "}
+            <em>Laguna State Polytechnic University</em>, where i developed
+            problem solving and analytical thinking skills.
           </p>
-        </Fade>
-      </div>
+          <p>
+            I have experience in developing websites using Python and JavaScript
+            which are deployed in the internet using Github pages and Heroku.
+          </p>
+        </div>
+      </Fade>
     </HeaderContainer>
   );
 }
@@ -21,27 +26,27 @@ function Header() {
 export default Header;
 
 const HeaderContainer = styled.div`
+  img {
+    height: 400px;
+    box-shadow: var(--dark-shadow);
+    border-radius: 10px;
+  }
   div {
-    width: 800px;
+    width: 500px;
     text-align: center;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    img {
-      height: 400px;
-      box-shadow: var(--dark-shadow);
-      border-radius: 10px;
-      margin: 10px;
+    h1 {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
     }
     p {
-      h1 {
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        margin: 10px;
-        text-align: center;
-      }
+      font-size: 13px;
+      margin: 10px;
     }
   }
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #0f0b0b;
@@ -54,13 +59,4 @@ const HeaderContainer = styled.div`
   color: white;
   overflow: hidden;
   height: 100vh;
-  padding: 20px;
-
-  @media screen and (max-width: 800px) {
-    & {
-      h1 {
-        font-size: 25px;
-      }
-    }
-  }
 `;

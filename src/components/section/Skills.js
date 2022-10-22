@@ -18,6 +18,7 @@ function Skills() {
     "Postman",
     "Windows",
     "Linux/Ubuntu",
+    "pycharm",
     "GIT",
     "GitHub",
   ];
@@ -94,10 +95,9 @@ const SkillsContainer = styled.div`
     div {
       font-size: 12px;
       text-transform: uppercase;
-      font-weight: bolder;
       margin: 15px;
       text-align: center;
-      border-bottom: solid 2px black;
+      border-bottom: solid 1px black;
     }
   }
 
