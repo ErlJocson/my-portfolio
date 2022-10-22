@@ -1,15 +1,24 @@
 import React from "react";
 import styled from "styled-components";
+import { Fade } from "react-reveal";
 
 function Navbar() {
   return (
     <NavbarContainer>
       <div className="logo">jerds</div>
       <div className="nav-items">
-        <a href="#header">about</a>
-        <a href="#skills">SKills</a>
-        <a href="#education">Education</a>
-        <a href="#projects">Projects</a>
+        <Fade cascade>
+          <a href="#header">about</a>
+        </Fade>
+        <Fade cascade>
+          <a href="#skills">SKills</a>
+        </Fade>
+        <Fade cascade>
+          <a href="#education">Education</a>
+        </Fade>
+        <Fade cascade>
+          <a href="#projects">Projects</a>
+        </Fade>
       </div>
     </NavbarContainer>
   );
@@ -30,7 +39,7 @@ const NavbarContainer = styled.nav`
   div {
     text-transform: uppercase;
     font-weight: bold;
-    letter-spacing: 1.5px;
+    letter-spacing: 2px;
     color: white;
   }
 
