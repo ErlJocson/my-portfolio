@@ -5,7 +5,7 @@ import Certificates from "./Certificates";
 
 function Education() {
   return (
-    <MyContainer>
+    <MyContainer id="education">
       <Title>Background Education</Title>
       <EducationContainer>
         <Fade bottom>
@@ -32,6 +32,7 @@ const MyContainer = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 60px 0;
 `;
 
 const EducationContainer = styled.div`

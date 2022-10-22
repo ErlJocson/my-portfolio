@@ -296,6 +296,6 @@ const CertificateContainer = styled.div`
     }
   }
   .certificate-details:hover {
-    background-color: gray;
+    background-color: rgb(196, 196, 255);
   }
 `;

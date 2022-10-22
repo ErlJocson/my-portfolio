@@ -4,7 +4,7 @@ import { Fade } from "react-reveal";
 
 function Project() {
   return (
-    <MyContainer>
+    <MyContainer id="projects">
       <Title>Programming projects</Title>
       <Projects>
         <Fade bottom>
@@ -168,6 +168,7 @@ const MyContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 60px 0;
 `;
 
 const Projects = styled.div`

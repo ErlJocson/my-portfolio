@@ -26,7 +26,7 @@ function Skills() {
 
   return (
     <>
-      <MySkillContainer>
+      <MySkillContainer id="skills">
         <Fade bottom>
           <SkillsContainer>
             <div className="skill-header gray-hover">

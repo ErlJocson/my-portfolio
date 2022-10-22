@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Fade } from "react-reveal";
 function Header() {
   return (
-    <HeaderContainer>
+    <HeaderContainer id="header">
       <div>
         <Fade bottom>
           <img src={process.env.PUBLIC_URL + "/profile.jpeg"} alt="" />
@@ -21,7 +21,6 @@ function Header() {
 export default Header;
 
 const HeaderContainer = styled.div`
-  box-shadow: var(--dark-shadow);
   div {
     width: 800px;
     text-align: center;
