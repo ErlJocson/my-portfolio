@@ -35,6 +35,7 @@ const HeaderContainer = styled.div`
     }
     p {
       h1 {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         margin: 10px;
         text-align: center;
       }
@@ -47,8 +48,8 @@ const HeaderContainer = styled.div`
   background-color: #0f0b0b;
   background: linear-gradient(
     90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(57, 82, 88, 1) 48%,
+    rgba(2, 0, 36, 1) 5%,
+    rgba(57, 82, 88, 1) 40%,
     rgba(15, 8, 51, 1) 100%
   );
   color: white;
