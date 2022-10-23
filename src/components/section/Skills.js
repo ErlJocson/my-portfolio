@@ -73,7 +73,7 @@ export default Skills;
 
 const MySkillContainer = styled.div`
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
@@ -108,6 +108,16 @@ const SkillsContainer = styled.div`
       text-transform: uppercase;
       text-align: center;
       width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    padding: 10px;
+    margin: 10px;
+    .skill-container {
+      div {
+        margin: 10px;
+      }
     }
   }
 `;

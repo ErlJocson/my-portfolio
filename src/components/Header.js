@@ -59,4 +59,16 @@ const HeaderContainer = styled.div`
   color: white;
   overflow: hidden;
   height: 100vh;
+
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+    img {
+      height: 200px;
+      border-radius: 50px;
+    }
+
+    div {
+      width: 300px;
+    }
+  }
 `;

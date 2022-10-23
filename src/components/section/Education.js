@@ -53,6 +53,19 @@ const EducationContainer = styled.div`
       color: gray;
     }
   }
+
+  @media screen and (max-width: 700px) {
+    min-width: 250px;
+    .header {
+      h3 {
+        font-size: 14px;
+      }
+    }
+
+    .contents {
+      font-size: 12.5px;
+    }
+  }
 `;
 
 const Title = styled.h3`

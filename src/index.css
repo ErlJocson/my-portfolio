@@ -10,6 +10,9 @@
 
   --great-shadow: 8px 0px #0db3e6, -8px 0px #0db3e6, 0px 8px #0db3e6,
     0px -8px #0db3e6, 0px 18px #2979ff, -8px 13px #2a6cda, 8px 13px #2a6cda;
+
+  --great-shadow-small: 2px 0px #0db3e6, -2px 0px #0db3e6, 0px 2px #0db3e6,
+    0px -2px #0db3e6, 0px 3px #2979ff, -3px 5px #2a6cda, 2px 5px #2a6cda;
 }
 
 * {

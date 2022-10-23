@@ -205,6 +205,22 @@ const ProjectContainer = styled.div`
       }
     }
   }
+
+  @media screen and (max-width: 1000px) {
+    & {
+      padding: 10px;
+      width: 300px;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    width: 290px;
+    ul {
+      li {
+        margin-left: 20px;
+      }
+    }
+  }
 `;
 
 const Title = styled.h3`

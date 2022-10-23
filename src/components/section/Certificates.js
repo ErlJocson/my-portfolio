@@ -287,15 +287,25 @@ const CertificateContainer = styled.div`
     h3 {
       font-size: 14px;
     }
-    p {
-      font-size: 12px;
-    }
-
+    p,
     span {
       font-size: 12px;
     }
   }
   .certificate-details:hover {
     background-color: rgb(196, 196, 255);
+  }
+
+  @media screen and (max-width: 800px) {
+    .certificate-details {
+      h3 {
+        font-size: 12px;
+      }
+
+      p,
+      span {
+        font-size: 10px;
+      }
+    }
   }
 `;
