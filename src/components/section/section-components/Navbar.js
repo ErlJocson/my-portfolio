@@ -27,6 +27,9 @@ function Navbar() {
         <a href="#projects" onClick={() => setShowNavbar(!showNavbar)}>
           Projects
         </a>
+        <a href="#contact" onClick={() => setShowNavbar(!showNavbar)}>
+          Contact
+        </a>
       </div>
     </NavbarContainer>
   );
