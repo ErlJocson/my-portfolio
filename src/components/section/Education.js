@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { Fade } from "react-reveal";
 import Certificates from "./Certificates";
 
 function Education() {
@@ -8,15 +7,13 @@ function Education() {
     <MyContainer id="education">
       <Title>Background Education</Title>
       <EducationContainer>
-        <Fade bottom>
-          <div className="header">
-            <h3>Laguna State Polytechnic University</h3>
-          </div>
-          <div className="contents">
-            <p>Bachelor of Science in Mathematics</p>
-            <span>2018-2022</span>
-          </div>
-        </Fade>
+        <div className="header">
+          <h3>Laguna State Polytechnic University</h3>
+        </div>
+        <div className="contents">
+          <p>Bachelor of Science in Mathematics</p>
+          <span>2018-2022</span>
+        </div>
       </EducationContainer>
       <Title>Certificates</Title>
       <Certificates />

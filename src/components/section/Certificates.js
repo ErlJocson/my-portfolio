@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { Fade } from "react-reveal";
 
 const openCertificate = (path) => {
   window.open(path);
@@ -18,11 +17,9 @@ function Certificates() {
             )
           }
         >
-          <Fade bottom>
-            <h3>Python Data Structures</h3>
-            <p>Sololearn</p>
-            <span>November 2021</span>
-          </Fade>
+          <h3>Python Data Structures</h3>
+          <p>Sololearn</p>
+          <span>November 2021</span>
         </div>
         <div
           className="certificate-details"
@@ -32,11 +29,9 @@ function Certificates() {
             );
           }}
         >
-          <Fade bottom>
-            <h3>CSS Course</h3>
-            <p>Sololearn</p>
-            <span>November 2021</span>
-          </Fade>
+          <h3>CSS Course</h3>
+          <p>Sololearn</p>
+          <span>November 2021</span>
         </div>
         <div
           className="certificate-details"
@@ -46,11 +41,9 @@ function Certificates() {
             );
           }}
         >
-          <Fade bottom>
-            <h3>GIT Training</h3>
-            <p>Simplilearn</p>
-            <span>March 2022</span>
-          </Fade>
+          <h3>GIT Training</h3>
+          <p>Simplilearn</p>
+          <span>March 2022</span>
         </div>
         <div
           className="certificate-details"
@@ -60,11 +53,9 @@ function Certificates() {
             );
           }}
         >
-          <Fade bottom>
-            <h3>HTML Course</h3>
-            <p>Sololearn</p>
-            <span>November 2021</span>
-          </Fade>
+          <h3>HTML Course</h3>
+          <p>Sololearn</p>
+          <span>November 2021</span>
         </div>
         <div
           className="certificate-details"
@@ -74,10 +65,8 @@ function Certificates() {
             );
           }}
         >
-          <Fade bottom>
-            <h3>HTML Workshop</h3>
-            <p>GeeksforGeeks</p>
-          </Fade>
+          <h3>HTML Workshop</h3>
+          <p>GeeksforGeeks</p>
         </div>
 
         <div
@@ -88,11 +77,9 @@ function Certificates() {
             );
           }}
         >
-          <Fade bottom>
-            <h3>JavaScript for Beginners</h3>
-            <p>Simplilearn</p>
-            <span>March 2022</span>
-          </Fade>
+          <h3>JavaScript for Beginners</h3>
+          <p>Simplilearn</p>
+          <span>March 2022</span>
         </div>
         <div
           className="certificate-details"
@@ -102,11 +89,9 @@ function Certificates() {
             );
           }}
         >
-          <Fade bottom>
-            <h3>Introduction to Python</h3>
-            <p>Datacamp</p>
-            <span>September 2021</span>
-          </Fade>
+          <h3>Introduction to Python</h3>
+          <p>Datacamp</p>
+          <span>September 2021</span>
         </div>
         <div
           className="certificate-details"
@@ -116,11 +101,9 @@ function Certificates() {
             );
           }}
         >
-          <Fade bottom>
-            <h3>Introduction to SQL</h3>
-            <p>Datacamp</p>
-            <span>September 2021</span>
-          </Fade>
+          <h3>Introduction to SQL</h3>
+          <p>Datacamp</p>
+          <span>September 2021</span>
         </div>
         <div
           className="certificate-details"
@@ -130,11 +113,9 @@ function Certificates() {
             );
           }}
         >
-          <Fade bottom>
-            <h3>Introduction to SQL</h3>
-            <p>Simplilearn</p>
-            <span>March 2022</span>
-          </Fade>
+          <h3>Introduction to SQL</h3>
+          <p>Simplilearn</p>
+          <span>March 2022</span>
         </div>
         <div
           className="certificate-details"
@@ -144,11 +125,9 @@ function Certificates() {
             );
           }}
         >
-          <Fade bottom>
-            <h3>jQuery Course</h3>
-            <p>Sololearn</p>
-            <span>March 2022</span>
-          </Fade>
+          <h3>jQuery Course</h3>
+          <p>Sololearn</p>
+          <span>March 2022</span>
         </div>
         <div
           className="certificate-details"
@@ -158,11 +137,9 @@ function Certificates() {
             );
           }}
         >
-          <Fade bottom>
-            <h3>React + Redux</h3>
-            <p>Sololearn</p>
-            <span>Novermber 2021</span>
-          </Fade>
+          <h3>React + Redux</h3>
+          <p>Sololearn</p>
+          <span>Novermber 2021</span>
         </div>
         <div
           className="certificate-details"
@@ -172,11 +149,9 @@ function Certificates() {
             );
           }}
         >
-          <Fade bottom>
-            <h3>Web Development Fundamentals</h3>
-            <p>Sololearn</p>
-            <span>March 2022</span>
-          </Fade>
+          <h3>Web Development Fundamentals</h3>
+          <p>Sololearn</p>
+          <span>March 2022</span>
         </div>
       </CertificateContainer>
       <CertificateContainer>
@@ -188,11 +163,9 @@ function Certificates() {
             );
           }}
         >
-          <Fade bottom>
-            <h3>Analytics, Modelling, and Data Science</h3>
-            <p>Laguna State Polytechnic University</p>
-            <span>August 2021</span>
-          </Fade>
+          <h3>Analytics, Modelling, and Data Science</h3>
+          <p>Laguna State Polytechnic University</p>
+          <span>August 2021</span>
         </div>
         <div
           className="certificate-details"
@@ -202,11 +175,9 @@ function Certificates() {
             );
           }}
         >
-          <Fade bottom>
-            <h3>Introduction to Data Analysis</h3>
-            <p>New Era University</p>
-            <span>September 2021</span>
-          </Fade>
+          <h3>Introduction to Data Analysis</h3>
+          <p>New Era University</p>
+          <span>September 2021</span>
         </div>
         <div
           className="certificate-details"
@@ -216,11 +187,9 @@ function Certificates() {
             );
           }}
         >
-          <Fade bottom>
-            <h3>Data Analytics with Excel for beginners</h3>
-            <p>refocus</p>
-            <span> -- </span>
-          </Fade>
+          <h3>Data Analytics with Excel for beginners</h3>
+          <p>refocus</p>
+          <span> -- </span>
         </div>
         <div
           className="certificate-details"
@@ -230,11 +199,9 @@ function Certificates() {
             );
           }}
         >
-          <Fade bottom>
-            <h3>How to Start Data Analystics with Python and SQL</h3>
-            <p>refocus</p>
-            <span> -- </span>
-          </Fade>
+          <h3>How to Start Data Analystics with Python and SQL</h3>
+          <p>refocus</p>
+          <span> -- </span>
         </div>
         <div
           className="certificate-details"
@@ -244,11 +211,9 @@ function Certificates() {
             );
           }}
         >
-          <Fade bottom>
-            <h3>Oral and Visual Presentation of Research</h3>
-            <p>University of the Philippines</p>
-            <span>May 2022</span>
-          </Fade>
+          <h3>Oral and Visual Presentation of Research</h3>
+          <p>University of the Philippines</p>
+          <span>May 2022</span>
         </div>
         <div
           className="certificate-details"
@@ -258,11 +223,9 @@ function Certificates() {
             );
           }}
         >
-          <Fade bottom>
-            <h3>Writing the Manuscript and Getting Published</h3>
-            <p>University of the Philippines</p>
-            <span>May 2022</span>
-          </Fade>
+          <h3>Writing the Manuscript and Getting Published</h3>
+          <p>University of the Philippines</p>
+          <span>May 2022</span>
         </div>
       </CertificateContainer>
     </>

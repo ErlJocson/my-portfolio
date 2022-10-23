@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { Fade } from "react-reveal";
 
 function Navbar() {
   const [showNavbar, setShowNavbar] = useState(false);
@@ -16,26 +15,18 @@ function Navbar() {
       </div>
 
       <div className="nav-items">
-        <Fade cascade>
-          <a href="#header" onClick={() => setShowNavbar(!showNavbar)}>
-            about
-          </a>
-        </Fade>
-        <Fade cascade>
-          <a href="#skills" onClick={() => setShowNavbar(!showNavbar)}>
-            SKills
-          </a>
-        </Fade>
-        <Fade cascade>
-          <a href="#education" onClick={() => setShowNavbar(!showNavbar)}>
-            Education
-          </a>
-        </Fade>
-        <Fade cascade>
-          <a href="#projects" onClick={() => setShowNavbar(!showNavbar)}>
-            Projects
-          </a>
-        </Fade>
+        <a href="#header" onClick={() => setShowNavbar(!showNavbar)}>
+          about
+        </a>
+        <a href="#skills" onClick={() => setShowNavbar(!showNavbar)}>
+          SKills
+        </a>
+        <a href="#education" onClick={() => setShowNavbar(!showNavbar)}>
+          Education
+        </a>
+        <a href="#projects" onClick={() => setShowNavbar(!showNavbar)}>
+          Projects
+        </a>
       </div>
     </NavbarContainer>
   );

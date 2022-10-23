@@ -1,24 +1,22 @@
 import React from "react";
 import styled from "styled-components";
-import { Fade } from "react-reveal";
+
 function Header() {
   return (
     <HeaderContainer id="header">
-      <Fade bottom>
-        <img src={process.env.PUBLIC_URL + "/profile.jpeg"} alt="" />
-        <div>
-          <h1>ERL JERRALD JOCSON</h1>
-          <p>
-            I graduated in college on September 16, 2022 from{" "}
-            <em>Laguna State Polytechnic University</em>, where i developed
-            problem solving and analytical thinking skills.
-          </p>
-          <p>
-            I have experience in developing websites using Python and JavaScript
-            which are deployed in the internet using Github pages and Heroku.
-          </p>
-        </div>
-      </Fade>
+      <img src={process.env.PUBLIC_URL + "/profile.jpeg"} alt="" />
+      <div>
+        <h1>ERL JERRALD JOCSON</h1>
+        <p>
+          I graduated in college on September 16, 2022 from{" "}
+          <em>Laguna State Polytechnic University</em>, where i developed
+          problem solving and analytical thinking skills.
+        </p>
+        <p>
+          I have experience in developing websites using Python and JavaScript
+          which are deployed in the internet using Github pages and Heroku.
+        </p>
+      </div>
     </HeaderContainer>
   );
 }

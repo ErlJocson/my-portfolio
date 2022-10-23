@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { Fade } from "react-reveal";
 
 function Skills() {
   const programmingSkills = [
@@ -28,42 +27,36 @@ function Skills() {
   return (
     <>
       <MySkillContainer id="skills">
-        <Fade bottom>
-          <SkillsContainer>
-            <div className="skill-header gray-hover">
-              <h3>Programming skills</h3>
-            </div>
-            <div className="skill-container">
-              {programmingSkills.map((skills, id) => {
-                return <div key={id}>{skills}</div>;
-              })}
-            </div>
-          </SkillsContainer>
-        </Fade>
-        <Fade bottom>
-          <SkillsContainer>
-            <div className="skill-header gray-hover">
-              <h3>Tools and technologies</h3>
-            </div>
-            <div className="skill-container">
-              {tools.map((skill, id) => {
-                return <div key={id}>{skill}</div>;
-              })}
-            </div>
-          </SkillsContainer>
-        </Fade>
-        <Fade bottom>
-          <SkillsContainer>
-            <div className="skill-header gray-hover">
-              <h3>Soft skills</h3>
-            </div>
-            <div className="skill-container">
-              {softSkills.map((skill, id) => {
-                return <div key={id}>{skill}</div>;
-              })}
-            </div>
-          </SkillsContainer>
-        </Fade>
+        <SkillsContainer>
+          <div className="skill-header gray-hover">
+            <h3>Programming skills</h3>
+          </div>
+          <div className="skill-container">
+            {programmingSkills.map((skills, id) => {
+              return <div key={id}>{skills}</div>;
+            })}
+          </div>
+        </SkillsContainer>
+        <SkillsContainer>
+          <div className="skill-header gray-hover">
+            <h3>Tools and technologies</h3>
+          </div>
+          <div className="skill-container">
+            {tools.map((skill, id) => {
+              return <div key={id}>{skill}</div>;
+            })}
+          </div>
+        </SkillsContainer>
+        <SkillsContainer>
+          <div className="skill-header gray-hover">
+            <h3>Soft skills</h3>
+          </div>
+          <div className="skill-container">
+            {softSkills.map((skill, id) => {
+              return <div key={id}>{skill}</div>;
+            })}
+          </div>
+        </SkillsContainer>
       </MySkillContainer>
     </>
   );
