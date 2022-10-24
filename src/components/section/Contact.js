@@ -1,44 +1,62 @@
-import React, { useRef } from "react";
+import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 import styled from "styled-components";
 export const Contact = () => {
-  const form = useRef();
+  const [user_name, setUsername] = useState("");
+  const [user_email, setUserEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   const sendEmail = (e) => {
     e.preventDefault();
-    console.log(form.current);
     emailjs
-      .sendForm(
+      .send(
         "service_ko4827n",
         "template_i0mstpx",
-        form.current,
+        { user_name, user_email, message },
         "-UjE_weagvP_Aj_nl"
       )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
+      .then((result) => {
+        if (result.text === "OK") {
+          alert("Message sent!");
         }
-      );
+        setUserEmail("");
+        setUsername("");
+        setMessage("");
+      });
   };
-  // -UjE_weagvP_Aj_nl
+
   return (
     <ContactContainer id="contact">
       <Title>Contact me</Title>
-      <form ref={form} onSubmit={sendEmail}>
+      <form onSubmit={sendEmail}>
         <div className="inputs">
           <label>Name: </label>
-          <input type="text" name="user_name" required />
+          <input
+            type="text"
+            name="user_name"
+            required
+            value={user_name}
+            onChange={(e) => setUsername(e.target.value)}
+          />
         </div>
         <div className="inputs">
           <label>Email: </label>
-          <input type="email" name="user_email" required />
+          <input
+            type="email"
+            name="user_email"
+            required
+            value={user_email}
+            onChange={(e) => setUserEmail(e.target.value)}
+          />
         </div>
         <div className="inputs">
           <label>Message: </label>
-          <textarea name="message" required />
+          <textarea
+            name="message"
+            required
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+          />
         </div>
         <div className="submit-button">
           <input type="submit" value="Send message" />
