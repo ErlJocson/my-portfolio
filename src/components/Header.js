@@ -62,7 +62,8 @@ const HeaderContainer = styled.div`
     flex-direction: column;
     img {
       height: 200px;
-      border-radius: 50px;
+      border-radius: 10px;
+      margin-bottom: 20px;
     }
 
     div {
