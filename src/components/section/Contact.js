@@ -5,9 +5,11 @@ export const Contact = () => {
   const [user_name, setUsername] = useState("");
   const [user_email, setUserEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [submit, setSubmit] = useState(true);
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setSubmit(false);
     emailjs
       .send(
         "service_ko4827n",
@@ -22,6 +24,7 @@ export const Contact = () => {
         setUserEmail("");
         setUsername("");
         setMessage("");
+        setSubmit(true);
       });
   };
 
@@ -59,7 +62,11 @@ export const Contact = () => {
           />
         </div>
         <div className="submit-button">
-          <input type="submit" value="Send message" />
+          {submit ? (
+            <input type="submit" value="Send message" />
+          ) : (
+            <input type="submit" value="Sending message" disabled />
+          )}
         </div>
       </form>
     </ContactContainer>
@@ -113,6 +120,7 @@ const ContactContainer = styled.div`
         background-color: #0db3e6;
         border-radius: 10px;
         border-color: white;
+        font-weight: bold;
       }
     }
   }
