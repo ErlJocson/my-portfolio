@@ -4,7 +4,11 @@ import styled from "styled-components";
 function Header() {
   return (
     <HeaderContainer id="header">
-      <img src={process.env.PUBLIC_URL + "/profile.jpeg"} alt="" />
+      <img
+        src={process.env.PUBLIC_URL + "/profile.jpeg"}
+        alt=""
+        height="400px"
+      />
       <div>
         <h1>ERL JERRALD JOCSON</h1>
         <p>
@@ -25,7 +29,6 @@ export default Header;
 
 const HeaderContainer = styled.div`
   img {
-    height: 400px;
     box-shadow: var(--dark-shadow);
     border-radius: 10px;
   }
