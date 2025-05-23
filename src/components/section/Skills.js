@@ -94,11 +94,11 @@ export default Skills;
 const MySkillContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
+  border-bottom: 6px solid #0db3e6;
   align-items: center;
-  justify-content: center;
-  height: 100vh;
-  width: 80%;
-  margin: auto;
+  justify-content: space-evenly;
+  height: 800px;
+  background-color: rgba(15, 11, 11, 0.3);
 `;
 
 const SkillsContainer = styled.div`
@@ -136,6 +136,8 @@ const SkillsContainer = styled.div`
   }
 
   @media screen and (max-width: 700px) {
+    width: 250px;
+    height: 150px;
     padding: 10px;
     margin: 10px;
     .skill-container {

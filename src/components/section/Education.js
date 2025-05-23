@@ -26,6 +26,7 @@ export default Education;
 const MyContainer = styled.div`
   min-height: 100vh;
   display: flex;
+
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -33,6 +34,14 @@ const MyContainer = styled.div`
   margin: auto;
   margin-bottom: 10px;
   width: 60%;
+
+  @media screen and (max-width: 1200px) {
+    width: 80%;
+  }
+
+  @media screen and (max-width: 700px) {
+    width: 100%;
+  }
 `;
 
 const EducationContainer = styled.div`

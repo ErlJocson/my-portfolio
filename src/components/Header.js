@@ -7,6 +7,7 @@ function Header() {
       <img src={process.env.PUBLIC_URL + "/profile.jpeg"} alt="" />
       <div>
         <h1>ERL JERRALD JOCSON</h1>
+        <hr />
         <p>
           I graduated from Laguna State Polytechnic University on September 16,
           2022, where I built a strong foundation in problem-solving and
@@ -39,6 +40,9 @@ const HeaderContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 10px;
+    background-color: rgba(15, 11, 11, 0.9);
+    padding: 20px;
     h1 {
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     }
@@ -46,21 +50,25 @@ const HeaderContainer = styled.div`
       font-size: 15px;
       margin: 10px;
     }
+
+    hr {
+      background-color: #0db3e6;
+      height: 3px;
+      border: none;
+      width: 80%;
+    }
   }
 
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #0f0b0b;
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 5%,
-    rgba(57, 82, 88, 1) 40%,
-    rgba(15, 8, 51, 1) 100%
-  );
   color: white;
   overflow: hidden;
-  height: 100vh;
+  height: 80vh;
+  background-image: url(${process.env.PUBLIC_URL + "/images/coffee.jpg"});
+  background-size: cover;
+  background-position: center;
+  border-bottom: 6px solid #0db3e6;
 
   @media screen and (max-width: 800px) {
     flex-direction: column;
@@ -68,10 +76,15 @@ const HeaderContainer = styled.div`
       height: 200px;
       border-radius: 10px;
       margin-bottom: 20px;
+      margin-right: 0;
     }
 
     div {
+      margin-left: 0;
       width: 300px;
+      p {
+        font-size: 12px;
+      }
     }
   }
 `;

@@ -2096,7 +2096,7 @@
   dependencies:
     "@tsparticles/engine" "3.8.1"
 
-"@tsparticles/react@*":
+"@tsparticles/react@^3.0.0":
   version "3.0.0"
   resolved "https://registry.npmjs.org/@tsparticles/react/-/react-3.0.0.tgz"
   integrity sha512-hjGEtTT1cwv6BcjL+GcVgH++KYs52bIuQGW3PWv7z3tMa8g0bd6RI/vWSLj7p//NZ3uTjEIeilYIUPBh7Jfq/Q==
@@ -2150,7 +2150,7 @@
   dependencies:
     "@tsparticles/engine" "3.8.1"
 
-"@tsparticles/slim@*":
+"@tsparticles/slim@^3.8.1":
   version "3.8.1"
   resolved "https://registry.npmjs.org/@tsparticles/slim/-/slim-3.8.1.tgz"
   integrity sha512-b6JV8MrxMz0XYn0eBCI/Mq8VCRyeaWfUyQaQyxLiRd96xpBXCeULooJF+Eaz9it1sUI898a5QfvY8djNXs4OJw==
@@ -3592,9 +3592,9 @@ caniuse-api@^3.0.0:
     lodash.uniq "^4.5.0"
 
 caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001400, caniuse-lite@^1.0.30001407:
-  version "1.0.30001423"
-  resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001423.tgz"
-  integrity sha512-09iwWGOlifvE1XuHokFMP7eR38a0JnajoyL3/i87c8ZjRWRrdKo1fqjNfugfBD0UDBIOz0U+jtNhJ0EPm1VleQ==
+  version "1.0.30001718"
+  resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001718.tgz"
+  integrity sha512-AflseV1ahcSunK53NfEs9gFWgOEmzr0f+kaMFA4xiLZlr9Hzt7HxcSpIFcnNCUkz6R6dWKa54rUz3HUmI3nVcw==
 
 case-sensitive-paths-webpack-plugin@^2.4.0:
   version "2.4.0"
@@ -7634,7 +7634,10 @@ multicast-dns@^7.2.5:
     "@testing-library/jest-dom" "^5.16.5"
     "@testing-library/react" "^13.4.0"
     "@testing-library/user-event" "^14.4.3"
+    "@tsparticles/react" "^3.0.0"
+    "@tsparticles/slim" "^3.8.1"
     emailjs-com "^3.2.0"
+    my-portfolio "file:"
     npm-check-updates "^16.3.8"
     react "^18.2.0"
     react-dom "^18.2.0"
