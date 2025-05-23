@@ -43,62 +43,90 @@ function Skills() {
 
   return (
     <>
-      <MySkillContainer id="skills">
-        <SkillsContainer>
-          <div className="skill-header gray-hover">
-            <h3>Data Analytics</h3>
-          </div>
-          <div className="skill-container">
-            {dataAnalytics.map((skills, id) => {
-              return <div key={id}>{skills}</div>;
-            })}
-          </div>
-        </SkillsContainer>
-        <SkillsContainer>
-          <div className="skill-header gray-hover">
-            <h3>Programming skills</h3>
-          </div>
-          <div className="skill-container">
-            {programmingSkills.map((skills, id) => {
-              return <div key={id}>{skills}</div>;
-            })}
-          </div>
-        </SkillsContainer>
-        <SkillsContainer>
-          <div className="skill-header gray-hover">
-            <h3>Tools and technologies</h3>
-          </div>
-          <div className="skill-container">
-            {tools.map((skill, id) => {
-              return <div key={id}>{skill}</div>;
-            })}
-          </div>
-        </SkillsContainer>
-        <SkillsContainer>
-          <div className="skill-header gray-hover">
-            <h3>Soft skills</h3>
-          </div>
-          <div className="skill-container">
-            {softSkills.map((skill, id) => {
-              return <div key={id}>{skill}</div>;
-            })}
-          </div>
-        </SkillsContainer>
-      </MySkillContainer>
+      <SkillsMainContainer>
+        <h1>Skills</h1>
+        <hr />
+        <MySkillContainer id="skills">
+          <SkillsContainer>
+            <div className="skill-header gray-hover">
+              <h3>Data Analytics</h3>
+            </div>
+            <div className="skill-container">
+              {dataAnalytics.map((skills, id) => {
+                return <div key={id}>{skills}</div>;
+              })}
+            </div>
+          </SkillsContainer>
+          <SkillsContainer>
+            <div className="skill-header gray-hover">
+              <h3>Programming skills</h3>
+            </div>
+            <div className="skill-container">
+              {programmingSkills.map((skills, id) => {
+                return <div key={id}>{skills}</div>;
+              })}
+            </div>
+          </SkillsContainer>
+          <SkillsContainer>
+            <div className="skill-header gray-hover">
+              <h3>Tools and technologies</h3>
+            </div>
+            <div className="skill-container">
+              {tools.map((skill, id) => {
+                return <div key={id}>{skill}</div>;
+              })}
+            </div>
+          </SkillsContainer>
+          <SkillsContainer>
+            <div className="skill-header gray-hover">
+              <h3>Soft skills</h3>
+            </div>
+            <div className="skill-container">
+              {softSkills.map((skill, id) => {
+                return <div key={id}>{skill}</div>;
+              })}
+            </div>
+          </SkillsContainer>
+        </MySkillContainer>
+      </SkillsMainContainer>
     </>
   );
 }
 
 export default Skills;
 
+const SkillsMainContainer = styled.div`
+  background-color: rgba(15, 11, 11, 0.3);
+  display: flex;
+  border-bottom: 6px solid #0db3e6;
+  height: 800px;
+  flex-direction: column;
+  padding: 20px;
+
+  h1 {
+    margin-top: 60px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  hr {
+    background-color: rgb(245, 31, 113);
+    height: 6px;
+    border: none;
+    width: 150px;
+    margin: 10px 0;
+    margin: 10px auto;
+  }
+`;
+
 const MySkillContainer = styled.div`
+  height: 100%;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  border-bottom: 6px solid #0db3e6;
   align-items: center;
   justify-content: space-evenly;
-  height: 800px;
-  background-color: rgba(15, 11, 11, 0.3);
 `;
 
 const SkillsContainer = styled.div`

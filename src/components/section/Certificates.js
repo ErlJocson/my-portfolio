@@ -234,6 +234,7 @@ function Certificates() {
 export default Certificates;
 
 const CertificateContainer = styled.div`
+  width: 60%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -269,5 +270,13 @@ const CertificateContainer = styled.div`
         font-size: 10px;
       }
     }
+  }
+
+  @media screen and (max-width: 1200px) {
+    width: 80%;
+  }
+
+  @media screen and (max-width: 700px) {
+    width: 100%;
   }
 `;

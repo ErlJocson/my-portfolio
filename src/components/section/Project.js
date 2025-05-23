@@ -5,6 +5,7 @@ function Project() {
   return (
     <MyContainer id="projects">
       <Title>Programming projects</Title>
+      <hr />
       <Projects>
         <ProjectContainer>
           <h3>Reminder app</h3>
@@ -150,12 +151,24 @@ function Project() {
 export default Project;
 
 const MyContainer = styled.div`
-  min-height: 100vh;
+  background-image: url(${process.env.PUBLIC_URL + "/images/program.jpg"});
+  background-size: cover;
+  background-position: center;
+  min-height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-top: 60px;
+  border-bottom: 6px solid #0db3e6;
+
+  hr {
+    background-color: rgb(245, 31, 113);
+    height: 6px;
+    border: none;
+    width: 150px;
+    margin: 10px 0;
+    margin: 10px auto;
+  }
 `;
 
 const Projects = styled.div`
@@ -170,6 +183,7 @@ const ProjectContainer = styled.div`
   margin: 20px;
   background-color: white;
   width: 400px;
+  height: 150px;
   box-shadow: var(--great-shadow);
   border-radius: 10px;
   h3 {
@@ -210,8 +224,7 @@ const ProjectContainer = styled.div`
   }
 `;
 
-const Title = styled.h3`
-  margin: 30px 0 18px 0;
+const Title = styled.h1`
   color: white;
   text-transform: uppercase;
 `;
