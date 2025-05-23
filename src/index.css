@@ -1,5 +1,5 @@
 :root {
-  --dark-color: rgb(255, 255, 255);
+  --dark-color: rgba(0, 0, 0, 0.781);
   --dark-shadow: 0 6px 10px var(--dark-color);
   --background-color: linear-gradient(
     90deg,

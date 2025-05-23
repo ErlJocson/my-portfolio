@@ -30,7 +30,9 @@ const MyContainer = styled.div`
   justify-content: center;
   flex-direction: column;
   padding-top: 60px;
+  margin: auto;
   margin-bottom: 10px;
+  width: 60%;
 `;
 
 const EducationContainer = styled.div`

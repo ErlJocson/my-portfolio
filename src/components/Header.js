@@ -4,21 +4,19 @@ import styled from "styled-components";
 function Header() {
   return (
     <HeaderContainer id="header">
-      <img
-        src={process.env.PUBLIC_URL + "/profile.jpeg"}
-        alt=""
-        height="400px"
-      />
+      <img src={process.env.PUBLIC_URL + "/profile.jpeg"} alt="" />
       <div>
         <h1>ERL JERRALD JOCSON</h1>
         <p>
-          I graduated in college on September 16, 2022 from{" "}
-          <em>Laguna State Polytechnic University</em>, where i developed
-          problem solving and analytical thinking skills.
+          I graduated from Laguna State Polytechnic University on September 16,
+          2022, where I built a strong foundation in problem-solving and
+          analytical thinking.
         </p>
         <p>
-          I have experience in developing websites using Python and JavaScript
-          which are deployed in the internet using Github pages and Heroku.
+          Since then, I've applied these skills in real-world
+          settings—leveraging data analytics, automation, and statistical
+          modeling to drive business excellence, optimize operations, and
+          support data-driven decision-making at scale.
         </p>
       </div>
     </HeaderContainer>
@@ -31,22 +29,25 @@ const HeaderContainer = styled.div`
   img {
     box-shadow: var(--dark-shadow);
     border-radius: 10px;
+    height: 600px;
+    margin-right: 50px;
   }
   div {
     width: 500px;
     text-align: center;
+    margin-left: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
     h1 {
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      text-align: center;
     }
     p {
-      font-size: 13px;
+      font-size: 15px;
       margin: 10px;
     }
   }
+
   display: flex;
   justify-content: center;
   align-items: center;

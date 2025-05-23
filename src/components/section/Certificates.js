@@ -153,8 +153,7 @@ function Certificates() {
           <p>Sololearn</p>
           <span>March 2022</span>
         </div>
-      </CertificateContainer>
-      <CertificateContainer>
+
         <div
           className="certificate-details"
           onClick={() => {
@@ -242,7 +241,7 @@ const CertificateContainer = styled.div`
     box-shadow: var(--great-shadow);
     border-radius: 10px;
     padding: 10px;
-    min-width: 100px;
+    min-width: 200px;
     background-color: white;
     text-align: center;
     margin: 15px;

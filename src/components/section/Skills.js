@@ -20,13 +20,40 @@ function Skills() {
     "pycharm",
     "GIT",
     "GitHub",
+    "Power Automate",
   ];
 
-  const softSkills = ["Problem-solving", "Analytical thinking", "Teamwork"];
+  const dataAnalytics = [
+    "Statistics",
+    "Minitab",
+    "Excel",
+    "Power Point/Canva",
+    "Jamovi",
+    "Power BI",
+    "Query Building",
+  ];
+
+  const softSkills = [
+    "Data Visualization",
+    "Data Analysis",
+    "Problem-solving",
+    "Analytical thinking",
+    "Teamwork",
+  ];
 
   return (
     <>
       <MySkillContainer id="skills">
+        <SkillsContainer>
+          <div className="skill-header gray-hover">
+            <h3>Data Analytics</h3>
+          </div>
+          <div className="skill-container">
+            {dataAnalytics.map((skills, id) => {
+              return <div key={id}>{skills}</div>;
+            })}
+          </div>
+        </SkillsContainer>
         <SkillsContainer>
           <div className="skill-header gray-hover">
             <h3>Programming skills</h3>
@@ -69,16 +96,20 @@ const MySkillContainer = styled.div`
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  height: 100vh;
+  width: 80%;
+  margin: auto;
 `;
 
 const SkillsContainer = styled.div`
   width: 300px;
   padding: 20px;
   margin: 20px;
-  background-color: white;
+  background-color: rgba(255, 255, 255);
   box-shadow: var(--great-shadow);
   border-radius: 10px;
+  height: 200px;
+
   .skill-container {
     display: flex;
     flex-wrap: wrap;
