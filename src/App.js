@@ -3,16 +3,17 @@ import styled from "styled-components";
 import Header from "./components/Header.js";
 import { Skills, Education, Project } from "./components/Section.js";
 import ParticleComponent from "./components/section/Particles.js";
+import MyTimeline from "./components/section/Timeline.js";
 
 function App() {
   return (
     <>
       <MainContainer>
-        {/* <Navbar /> */}
         <Header />
         <Skills />
         <Project />
         <Education />
+        <MyTimeline />
       </MainContainer>
       <ParticleComponent />
     </>

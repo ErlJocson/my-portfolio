@@ -33,9 +33,30 @@ function Header() {
             <em>
               Conducted multiple high impacting case studies and dashboard{" "}
             </em>
-            which helped improve, not only the performance of our Call Center
-            Agents, but also other departments from the company such as Human
-            Resouces, Quality Team, and IT department
+            which helped improve, not only the performance of the operations,
+            but also other departments from the company such as Human Resouces,
+            Quality Team, and IT department
+          </p>
+          <p>
+            I have also created websites that were used for
+            <em>
+              {" "}
+              improving the business processes and recommending ways to improve
+              the customer service expereince{" "}
+            </em>
+            of the clients of Hinduja Global Solutions
+            <ul>
+              <li>
+                <a href="https://erljocson.github.io/oss-staffing/">
+                  HGS OSS new form application
+                </a>
+                <li>
+                  <a href="https://erljocson.github.io/mcdo-clone/">
+                    McDonalds Clone with Simple Chat Application
+                  </a>
+                </li>
+              </li>
+            </ul>
           </p>
         </HeaderContent>
       </ContentContainer>
@@ -68,6 +89,10 @@ const HeaderContent = styled.div`
 
     em {
       color: rgb(245, 31, 113);
+    }
+
+    ul {
+      text-align: left;
     }
   }
 
