@@ -4,7 +4,7 @@ import styled from "styled-components";
 function Project() {
   return (
     <MyContainer id="projects">
-      <Title>Programming projects</Title>
+      <Title>Project Portfolio</Title>
       <hr />
       <Projects>
         <ProjectContainer>
@@ -159,7 +159,6 @@ const MyContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border-bottom: 6px solid #0db3e6;
 
   hr {
     background-color: rgb(245, 31, 113);

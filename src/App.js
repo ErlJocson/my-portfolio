@@ -11,9 +11,9 @@ function App() {
       <MainContainer>
         <Header />
         <Skills />
-        <Project />
-        <Education />
         <MyTimeline />
+        <Education />
+        <Project />
       </MainContainer>
       <ParticleComponent />
     </>

@@ -5,7 +5,7 @@ import Certificates from "./Certificates";
 function Education() {
   return (
     <MyContainer id="education">
-      <Title>Certifications</Title>
+      <Title>Credentials that Counts</Title>
       <hr />
 
       <Certificates />
@@ -16,6 +16,7 @@ function Education() {
 export default Education;
 
 const MyContainer = styled.div`
+  border-bottom: 6px solid #0db3e6;
   min-height: 100vh;
   display: flex;
 

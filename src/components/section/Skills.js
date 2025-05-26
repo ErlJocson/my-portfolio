@@ -44,7 +44,7 @@ function Skills() {
   return (
     <>
       <SkillsMainContainer>
-        <h1>Skills</h1>
+        <h1>Things i Bring to the Table</h1>
         <hr />
         <MySkillContainer id="skills">
           <SkillsContainer>
