@@ -6,7 +6,7 @@ function Header() {
       <img src={process.env.PUBLIC_URL + "/profile.jpeg"} alt="" />
       <ContentContainer>
         <HeaderContent>
-          <h1>ERL JERRALD JOCSON</h1>
+          <h1>ERL JERRALD JOCSON, CLSSYB</h1>
           <hr />
           <p>
             Obtained a <em>Bachelors degree in Mathematics</em> from Laguna
@@ -19,43 +19,10 @@ function Header() {
             modeling to drive business excellence, optimize operations, and
             support data-driven decision-making at scale
           </p>
-        </HeaderContent>
-
-        <HeaderContent>
-          <h1>SENIOR DATA ANALYST</h1>
-          <hr />
           <p>
-            I have been working on
-            <em> Hinduja Global Solutions since March 2024</em>
-          </p>
-          <p>
-            <em>
-              Conducted multiple high impacting case studies and dashboard{" "}
-            </em>
-            which helped improve, not only the performance of the operations,
-            but also other departments from the company such as Human Resouces,
-            Quality Team, and IT department
-          </p>
-          <p>
-            I have also created websites that were used for
-            <em>
-              {" "}
-              improving the business processes and recommending ways to improve
-              the customer service expereince{" "}
-            </em>
-            of the clients of Hinduja Global Solutions
-            <ul>
-              <li>
-                <a href="https://erljocson.github.io/oss-staffing/">
-                  HGS OSS new form application
-                </a>
-                <li>
-                  <a href="https://erljocson.github.io/mcdo-clone/">
-                    McDonalds Clone with Simple Chat Application
-                  </a>
-                </li>
-              </li>
-            </ul>
+            I earned a <em>Lean Six Sigma Yellow Belt Certification</em>,
+            further strengthening my ability to identify inefficiencies, reduce
+            waste, and implement process improvements with measurable impact.
           </p>
         </HeaderContent>
       </ContentContainer>
@@ -85,13 +52,9 @@ const HeaderContent = styled.div`
   p {
     font-size: 15px;
     margin: 10px;
-
+    text-align: left;
     em {
       color: rgb(245, 31, 113);
-    }
-
-    ul {
-      text-align: left;
     }
   }
 
