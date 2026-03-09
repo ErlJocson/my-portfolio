@@ -99,9 +99,8 @@ const SkillsMainContainer = styled.div`
   background-color: rgba(15, 11, 11, 0.3);
   display: flex;
   border-bottom: 6px solid #0db3e6;
-  height: 800px;
   flex-direction: column;
-  padding: 20px;
+  padding: 10px;
 
   h1 {
     margin-top: 60px;
@@ -118,11 +117,17 @@ const SkillsMainContainer = styled.div`
     margin: 10px 0;
     margin: 10px auto;
   }
+
+  @media screen and (max-width: 800px) {
+    h1 {
+      font-size: 20px;
+      margin-top: 10px;
+    }
+  }
 `;
 
 const MySkillContainer = styled.div`
-  height: 100%;
-  margin: 0 auto;
+  margin: 10px auto;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -136,7 +141,6 @@ const SkillsContainer = styled.div`
   background-color: rgba(255, 255, 255);
   box-shadow: var(--great-shadow);
   border-radius: 10px;
-  height: 200px;
 
   .skill-container {
     display: flex;
@@ -149,7 +153,6 @@ const SkillsContainer = styled.div`
       text-transform: uppercase;
       margin: 15px;
       text-align: center;
-      border-bottom: solid 1px black;
     }
   }
 
@@ -164,13 +167,23 @@ const SkillsContainer = styled.div`
   }
 
   @media screen and (max-width: 700px) {
-    width: 250px;
-    height: 150px;
-    padding: 10px;
-    margin: 10px;
+    width: 120px;
+    padding: 5px;
+    margin: 20px;
     .skill-container {
+      display: block;
       div {
-        margin: 10px;
+        font-size: 10px;
+        text-align: left;
+        padding: 0;
+        margin: 2px;
+      }
+    }
+
+    .skill-header {
+      h3 {
+        color: black;
+        font-size: 12px;
       }
     }
   }

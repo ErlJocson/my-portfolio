@@ -4,7 +4,7 @@ import styled from "styled-components";
 function Project() {
   return (
     <MyContainer id="projects">
-      <Title>Project Portfolio</Title>
+      <Title>Programming Project Portfolio</Title>
       <hr />
       <Projects>
         <ProjectContainer>

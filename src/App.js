@@ -1,7 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import Header from "./components/Header.js";
-import { Skills, Education, Project } from "./components/Section.js";
+import {
+  Skills,
+  Education,
+  Project,
+  DataProject,
+} from "./components/Section.js";
 import ParticleComponent from "./components/section/Particles.js";
 import MyTimeline from "./components/section/Timeline.js";
 
@@ -12,6 +17,7 @@ function App() {
         <Header />
         <Skills />
         <MyTimeline />
+        <DataProject />
         <Education />
         <Project />
       </MainContainer>

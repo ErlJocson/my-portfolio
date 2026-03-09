@@ -6,7 +6,7 @@ function Header() {
       <img src={process.env.PUBLIC_URL + "/profile.jpeg"} alt="" />
       <ContentContainer>
         <HeaderContent>
-          <h1>ERL JERRALD JOCSON, CLSSYB</h1>
+          <h1>ERL JERRALD JOCSON, CLSSGB</h1>
           <hr />
           <p>
             Obtained a <em>Bachelors degree in Mathematics</em> from Laguna
@@ -16,13 +16,11 @@ function Header() {
           <p>
             Since then, I've applied these skills in real-world
             settings—leveraging data analytics, automation, and statistical
-            modeling to drive business excellence, optimize operations, and
-            support data-driven decision-making at scale
-          </p>
-          <p>
-            I earned a <em>Lean Six Sigma Yellow Belt Certification</em>,
-            further strengthening my ability to identify inefficiencies, reduce
-            waste, and implement process improvements with measurable impact.
+            modeling to{" "}
+            <em>
+              drive business excellence, optimize operations, and support
+              data-driven decision-making at scale
+            </em>
           </p>
         </HeaderContent>
       </ContentContainer>
@@ -72,6 +70,10 @@ const HeaderContent = styled.div`
         font-size: 12px;
       }
     }
+
+    h1 {
+      font-size: 20px;
+    }
   }
 `;
 
@@ -95,6 +97,7 @@ const HeaderContainer = styled.div`
 
   @media screen and (max-width: 800px) {
     flex-direction: column;
+    justify-content: center;
     img {
       height: 200px;
       border-radius: 10px;
