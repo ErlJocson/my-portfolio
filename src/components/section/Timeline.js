@@ -5,13 +5,18 @@ import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import styled from "styled-components";
+import { useTheme, useMediaQuery } from "@mui/material";
 
 export default function AlternateTimeline() {
+    const theme = useTheme();
+    const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+
   return (
     <TimelineContainer>
       <h1>MY DATA JOURNEY</h1>
       <hr />
-      <ThisTimeline position="alternate">
+      
+      <ThisTimeline position={isMobile ? "right" : "alternate"}>
         <TimelineItem>
           <TimelineSeparator>
             <TimelineDot />
@@ -143,6 +148,16 @@ export default function AlternateTimeline() {
   );
 }
 
+const ThisTimeline = styled(Timeline)`
+  width: 60%;
+  margin: 20px auto 0;
+   @media screen and (max-width: 800px) {
+    width: 100%;
+    margin: 0;
+  }
+`;
+
+
 const ContentContainer = styled.div`
   padding: 20px;
   background-color: rgba(8, 7, 44, 0.8);
@@ -150,6 +165,9 @@ const ContentContainer = styled.div`
   color: white;
   margin: 0 0 20px 0;
   border-radius: 10px;
+  @media screen and (max-width: 800px) {
+      font-size: 12px;
+  }
 `;
 
 const ContentHeader = styled.div`
@@ -185,7 +203,8 @@ const TimelineContainer = styled.div`
   background-size: cover;
   border-bottom: 6px solid #0db3e6;
   background-position: center;
-  padding: 30px;
+  padding: 30px 0;
+  overflow: hidden;
   h1 {
     text-align: center;
     color: white;
@@ -197,9 +216,12 @@ const TimelineContainer = styled.div`
     height: 6px;
     width: 30%;
   }
+
+  @media screen and (max-width: 800px) {
+    margin: 10px;
+    h1 {
+      font-size: 20px;
+    }
+  }
 `;
 
-const ThisTimeline = styled(Timeline)`
-  width: 60%;
-  margin: 20px auto 0;
-`;

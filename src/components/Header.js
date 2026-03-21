@@ -22,6 +22,12 @@ function Header() {
               data-driven decision-making at scale
             </em>
           </p>
+          <p>
+            I also earned a Lean Six Sigma Green Belt certification, which enhanced
+            my ability to apply structured problem-solving frameworks (DMAIC) and
+            statistical analysis to identify inefficiencies, improve processes, 
+            and build more impactful, data-driven solutions.
+          </p>
         </HeaderContent>
       </ContentContainer>
     </HeaderContainer>
@@ -30,7 +36,8 @@ function Header() {
 
 export default Header;
 
-const ContentContainer = styled.div``;
+const ContentContainer = styled.div`
+`;
 
 const HeaderContent = styled.div`
   box-shadow: var(--dark-shadow);
@@ -94,8 +101,10 @@ const HeaderContainer = styled.div`
   background-size: cover;
   background-position: center;
   border-bottom: 6px solid #0db3e6;
+  padding: 0px 100px;
 
   @media screen and (max-width: 800px) {
+  padding: 50px 0;
     flex-direction: column;
     justify-content: center;
     img {
