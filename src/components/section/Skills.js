@@ -11,6 +11,7 @@ function Skills() {
     "SQL",
     "HTML",
     "CSS",
+    "DBeaver"
   ];
   const tools = [
     "Visual studio code",
@@ -34,6 +35,7 @@ function Skills() {
   ];
 
   const softSkills = [
+    "Management",
     "Data Visualization",
     "Data Analysis",
     "Problem-solving",
@@ -100,13 +102,12 @@ const SkillsMainContainer = styled.div`
   display: flex;
   border-bottom: 6px solid #0db3e6;
   flex-direction: column;
-  padding: 10px;
+  padding: 30px 0;
 
   h1 {
-    margin-top: 60px;
     color: white;
     text-transform: uppercase;
-    text-align: center;
+    text-align: center;;
   }
 
   hr {
@@ -121,7 +122,8 @@ const SkillsMainContainer = styled.div`
   @media screen and (max-width: 800px) {
     h1 {
       font-size: 20px;
-      margin-top: 10px;
+      width: 80%;
+      margin: 0px auto;
     }
   }
 `;
