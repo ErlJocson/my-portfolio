@@ -1,7 +1,5 @@
 import Skills from "./section/Skills";
-import Education from "./section/Education";
-import Project from "./section/Project";
-import DataProject from "./section/DataProject";
-// import Contact from "./section/Contact";
+import ParticleComponent from "./section/Particles.js";
+import MyTimeline from "./section/Timeline.js";
 
-export { Skills, Education, Project, DataProject };
+export { Skills, ParticleComponent, MyTimeline };

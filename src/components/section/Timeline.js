@@ -111,7 +111,7 @@ const ThisTimeline = styled(Timeline)`
 
 const ContentContainer = styled.div`
   padding: 20px;
-  background-color: rgba(8, 7, 44, 0.8);
+  background-color: rgba(8, 7, 44, 0.9);
   box-shadow: var(--dark-shadow);
   color: white;
   margin: 0 0 20px 0;
@@ -169,7 +169,7 @@ const TimelineContainer = styled.div`
   }
 
   @media screen and (max-width: 800px) {
-    margin: 10px 0;
+    padding: 10px 0;
     h1 {
       font-size: 20px;
     }
@@ -177,7 +177,7 @@ const TimelineContainer = styled.div`
 `;
 
 const MobileTimelineItem = styled.div`
-  background-color: rgba(8, 7, 44, 0.8);
+  background-color: rgba(8, 7, 44, 0.9);
   padding: 10px;
   margin: 10px;
   border-radius:10px;
@@ -210,6 +210,10 @@ const MobileContentContainer = styled.div``;
 const MobileContentDescription = styled.div`
  ul {
   margin: 0px 12px;
+
+  li {
+    margin: 4px 0;
+  }
  }
   font-size: 12px;
 `;

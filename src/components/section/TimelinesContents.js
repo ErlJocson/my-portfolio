@@ -1,4 +1,15 @@
-export const contents = [
+export const contents = [   {
+        "date":"March 2026 - present",
+        "position":"Assistant Manager - Data Science",
+        "company":"Maxicare Healthcare Corporation",
+        "link":"https://www.maxicare.com.ph/",
+        "descriptions":[
+            "Lead end-to-end analytics and modeling initiatives—from problem framing to deployment—driving decisions on healthcare utilization, cost optimization, and risk segmentation",
+            "Build and operationalize predictive models and dashboards (e.g., churn, fraud, claims risk) using Python/SQL/BI tools, ensuring outputs are actionable and adopted by stakeholders",
+            "Manage and mentor analysts while aligning projects with business strategy, translating ambiguous requirements into measurable data science solutions with clear ROI",
+        ],
+        "leftcontents":false
+    },
     {
         "date":"March 2024 - March 2026",
         "position":"Senior Data Analytics Analyst",
@@ -11,7 +22,7 @@ export const contents = [
             "Developed and maintained high-performance dashboards for financial data with millions of rows",
             "Created an end-to-end data pipeline using Python/JavaScript and web scraping, reducing manual work by 95% and automating weekly reporting"
         ],
-        "leftcontents":false
+        "leftcontents":true
     },
     {
         "date":"January 2023 - November 2023",
@@ -25,7 +36,7 @@ export const contents = [
            "Investigate the products and services of a company to assess their viability and competitiveness in the market",
            "Updates financial statements of Public Listed Companies from different countries that are existing in the database of the company",
         ],
-        "leftcontents":true
+        "leftcontents":false
     },
     {
         "date":"September 2018 - September 2022",
@@ -38,6 +49,6 @@ export const contents = [
             "Completed project including programming, data visualization, and data analysis",
             "Strengthened problem-solving and critical thinking"
         ],
-        "leftcontents":false
+        "leftcontents":true
     }
 ]
