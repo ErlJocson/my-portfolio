@@ -5,155 +5,106 @@ import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import styled from "styled-components";
+import { contents } from "./TimelinesContents";
 import { useTheme, useMediaQuery } from "@mui/material";
 
 export default function AlternateTimeline() {
-    const theme = useTheme();
-    const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
     <TimelineContainer>
       <h1>MY DATA JOURNEY</h1>
       <hr />
-      
-      <ThisTimeline position={isMobile ? "right" : "alternate"}>
-        <TimelineItem>
-          <TimelineSeparator>
-            <TimelineDot />
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineContent>
-            <ContentContainer>
-              <ContentHeader>
-                <p>March 2024 - present</p>
-                <h3>Senior Data Analytics Analyst</h3>
-                <span>
-                  <a href="https://hgs.cx/locations/philippines/">
-                    Hinduja Global Solutions Limited
-                  </a>
-                </span>
-                <div />
-              </ContentHeader>
-              <ContentDescription>
-                <ul>
-                  <li>
-                    Achieved $100K+ in cost savings through automation, case
-                    studies, and dashboard development
-                  </li>
-                  <li>
-                    Automated monthly business reviews for 20+ accounts, cutting
-                    effort by 90% and enabling real-time insights via Power BI
-                  </li>
-                  <li>
-                    Built predictive models for talent acquisition and attrition
-                    using advanced statistical techniques like Factor Analysis
-                    and Survival Analysis
-                  </li>
-                  <li>
-                    Developed and maintained high-performance dashboards for
-                    financial data with millions of rows
-                  </li>
-                  <li>
-                    Created an end-to-end data pipeline using Python/JavaScript
-                    and web scraping, reducing manual work by 95% and automating
-                    weekly reporting
-                  </li>
-                </ul>
-              </ContentDescription>
-            </ContentContainer>
-          </TimelineContent>
-        </TimelineItem>
-        <TimelineItem>
-          <TimelineSeparator>
-            <TimelineDot />
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineContent>
-            <ContentContainer>
-              <ContentHeader>
-                <p>January 2023 - November 2023</p>
-                <h3>Credit Analyst</h3>
-                <span>
-                  <a href="https://www.global-creditreports.com/">
-                    GlobalCIS Limited
-                  </a>
-                </span>
-                <div />
-              </ContentHeader>
-              <ContentDescription>
-                <ul>
-                  <li className="left-contents">
-                    Performed interviews via telephone calls to collect and
-                    verify crucial data found via research necessary for
-                    accomplishing credit reports
-                  </li>
-                  <li className="left-contents">
-                    Prepared comprehensive reports of businesses legally exists
-                    nationally and internationally
-                  </li>
-                  <li className="left-contents">
-                    Examined financial statement of companies to identify its
-                    credit-worthiness
-                  </li>
-                  <li className="left-contents">
-                    Investigate the products and services of a company to assess
-                    their viability and competitiveness in the market
-                  </li>
-                  <li className="left-contents">
-                    Updates financial statements of Public Listed Companies from
-                    different countries that are existing in the database of the
-                    company
-                  </li>
-                </ul>
-              </ContentDescription>
-            </ContentContainer>
-          </TimelineContent>
-        </TimelineItem>
-        <TimelineItem>
-          <TimelineSeparator>
-            <TimelineDot />
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineContent>
-            <ContentContainer>
-              <ContentHeader>
-                <p>September 2018 - September 2022</p>
-                <h3>Bachelor of Science in Mathematics</h3>
-                <span>
-                  <a href="https://lspu.edu.ph/">
-                    Laguna State Polytechnic University
-                  </a>
-                </span>
-                <div />
-              </ContentHeader>
-              <ContentDescription>
-                <ul>
-                  <li>
-                    Developed strong foundations in statistical analysis and
-                    data modeling
-                  </li>
-                  <li>Mastered fundamentals of Python</li>
-                  <li>
-                    Completed project including programming, data visualization,
-                    and data analysis
-                  </li>
-                  <li>Strengthened problem-solving and critical thinking</li>
-                </ul>
-              </ContentDescription>
-            </ContentContainer>
-          </TimelineContent>
-        </TimelineItem>
-      </ThisTimeline>
+
+      {isMobile ? (
+        <>
+          {contents.map((content, index) => (
+            <MobileTimelineItem key={index}>
+              <MobileTimelineContent>
+                <MobileContentContainer>
+                  <MobileContentHeader>
+                    <p>{content.date}</p>
+                    <h3>{content.position}</h3>
+                    <span>
+                      <a
+                        href={content.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {content.company}
+                      </a>
+                    </span>
+                    <div />
+                  </MobileContentHeader>
+
+                  <MobileContentDescription>
+                    <ul>
+                      {content.descriptions.map((text, i) => (
+                        <li
+                          key={i}
+                          className={content.leftcontents ? "left-contents" : ""}
+                        >
+                          {text}
+                        </li>
+                      ))}
+                    </ul>
+                  </MobileContentDescription>
+                </MobileContentContainer>
+              </MobileTimelineContent>
+            </MobileTimelineItem>
+          ))}
+        </>
+      ) : (
+        <ThisTimeline position = "alternate">
+          {contents.map((content, index) => (
+            <TimelineItem key={index}>
+              <TimelineSeparator>
+                <TimelineDot />
+                {index !== contents.length - 1 && <TimelineConnector />}
+              </TimelineSeparator>
+
+              <TimelineContent>
+                <ContentContainer>
+                  <ContentHeader>
+                    <p>{content.date}</p>
+                    <h3>{content.position}</h3>
+                    <span>
+                      <a
+                        href={content.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {content.company}
+                      </a>
+                    </span>
+                    <div />
+                  </ContentHeader>
+
+                  <ContentDescription>
+                    <ul className = {content.leftcontents ? "left-contents" : ""}>
+                      {content.descriptions.map((text, i) => (
+                        <li key={i}>{text}</li>
+                      ))}
+                    </ul>
+                  </ContentDescription>
+                </ContentContainer>
+              </TimelineContent>
+            </TimelineItem>
+          ))}
+        </ThisTimeline>
+      )}
     </TimelineContainer>
   );
 }
 
 const ThisTimeline = styled(Timeline)`
-  width: 60%;
+  width: 80%;
   margin: 20px auto 0;
-   @media screen and (max-width: 800px) {
+
+  @media screen and (max-width: 800px) {
     width: 100%;
-    margin: 0;
+    margin: 20px 0;
   }
 `;
 
@@ -218,10 +169,47 @@ const TimelineContainer = styled.div`
   }
 
   @media screen and (max-width: 800px) {
-    margin: 10px;
+    margin: 10px 0;
     h1 {
       font-size: 20px;
     }
   }
 `;
 
+const MobileTimelineItem = styled.div`
+  background-color: rgba(8, 7, 44, 0.8);
+  padding: 10px;
+  margin: 10px;
+  border-radius:10px;
+  color:white;
+`;
+
+const MobileTimelineContent = styled.div``;
+
+const MobileContentHeader = styled.div`
+  margin: 10px 0;
+  p {
+    font-size: 12px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  span {
+    font-size: 12px;
+
+    a {
+      color: white;
+    }
+  }
+`;
+
+const MobileContentContainer = styled.div``;
+
+const MobileContentDescription = styled.div`
+ ul {
+  margin: 0px 12px;
+ }
+  font-size: 12px;
+`;
