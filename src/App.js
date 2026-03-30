@@ -3,7 +3,8 @@ import Header from "./components/Header.js";
 import {
   Skills,
   ParticleComponent,
-  MyTimeline
+  MyTimeline,
+  Awards
 } from "./components/Section.js";
 
 
@@ -12,6 +13,7 @@ function App() {
     <>
       <MainContainer>
         <Header />
+        <Awards />
         <Skills />
         <MyTimeline />
       </MainContainer>

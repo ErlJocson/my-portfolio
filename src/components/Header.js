@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 function Header() {
   return (
-    <HeaderContainer id="header">
+    <HeaderContainer id="header" className="border-bottom-blue">
       <img src={process.env.PUBLIC_URL + "/profile.jpeg"} alt="" />
       <ContentContainer>
         <HeaderContent>
@@ -96,17 +96,18 @@ const HeaderContainer = styled.div`
   align-items: center;
   color: white;
   overflow: hidden;
-  height: 80vh;
   background-image: url(${process.env.PUBLIC_URL + "/images/coffee.jpg"});
   background-size: cover;
   background-position: center;
-  border-bottom: 6px solid #0db3e6;
-  padding: 0px 100px;
+  padding: 30px 100px;
+
+  @media screen and (max-width: 1400px) {
+    flex-direction: column;
+    justify-content: center;
+  }
 
   @media screen and (max-width: 800px) {
   padding: 50px 0;
-    flex-direction: column;
-    justify-content: center;
     img {
       height: 200px;
       border-radius: 10px;

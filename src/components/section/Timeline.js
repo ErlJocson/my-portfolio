@@ -13,7 +13,7 @@ export default function AlternateTimeline() {
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
-    <TimelineContainer>
+    <TimelineContainer className = "border-bottom-blue">
       <h1>MY DATA JOURNEY</h1>
       <hr />
 
@@ -152,7 +152,6 @@ const TimelineContainer = styled.div`
   min-height: 60vh;
   background-image: url(${process.env.PUBLIC_URL + "/images/timeline.jpg"});
   background-size: cover;
-  border-bottom: 6px solid #0db3e6;
   background-position: center;
   padding: 30px 0;
   overflow: hidden;

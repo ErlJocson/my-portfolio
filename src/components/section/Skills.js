@@ -4,6 +4,7 @@ import styled from "styled-components";
 function Skills() {
   const programmingSkills = [
     "Python",
+    "Jupyter",
     "Flask",
     "Django",
     "JavaScript",
@@ -11,7 +12,7 @@ function Skills() {
     "SQL",
     "HTML",
     "CSS",
-    "DBeaver"
+    "DBeaver",
   ];
   const tools = [
     "Visual studio code",
@@ -45,7 +46,7 @@ function Skills() {
 
   return (
     <>
-      <SkillsMainContainer>
+      <SkillsMainContainer className="border-bottom-blue">
         <h1>Things i Bring to the Table</h1>
         <hr />
         <MySkillContainer id="skills">
@@ -100,7 +101,6 @@ export default Skills;
 const SkillsMainContainer = styled.div`
   background-color: rgba(15, 11, 11, 0.3);
   display: flex;
-  border-bottom: 6px solid #0db3e6;
   flex-direction: column;
   padding: 30px 0;
 
