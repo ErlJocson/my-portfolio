@@ -39,3 +39,14 @@ code {
 .border-bottom-blue {
   border-bottom: 6px solid #0db3e6;
 }
+
+.close-button {
+  padding: 10px 0 0 10px;
+  margin: 20px 0 0 20px;
+}
+
+.navigation-icons {
+  font-size: 30px;
+  margin: 0 10px;
+  padding: 10px 10px;
+}

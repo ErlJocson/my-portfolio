@@ -5,7 +5,7 @@ import {
   MyTimeline,
   Awards,
   Header,
-  NavigationBar
+  // NavigationBar
 } from "./components/Section.js";
 
 
@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <MainContainer>
-        <NavigationBar />
+        {/* <NavigationBar /> */}
         <Header />
         <Awards />
         <Skills />
