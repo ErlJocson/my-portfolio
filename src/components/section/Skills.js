@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 
 function Skills() {
@@ -46,7 +45,7 @@ function Skills() {
 
   return (
     <>
-      <SkillsMainContainer className="border-bottom-blue">
+      <SkillsMainContainer className="border-bottom-blue" id="skills">
         <h1>Things i Bring to the Table</h1>
         <hr />
         <MySkillContainer id="skills">
@@ -171,7 +170,7 @@ const SkillsContainer = styled.div`
   @media screen and (max-width: 700px) {
     width: 120px;
     padding: 5px;
-    margin: 20px;
+    margin: 10px;
     .skill-container {
       display: block;
       div {

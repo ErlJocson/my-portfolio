@@ -1,10 +1,10 @@
 import styled from "styled-components"
-import { awards } from "./AwardContents"
+import { awards } from "./details/AwardContents"
 
 function Awards() {
   return (
     <>
-      <MainContainer className="border-bottom-blue">
+      <MainContainer className="border-bottom-blue" id = "awards">
         <h1>Awards and Recognitions</h1>
         <hr />
         <AwardsContainer>

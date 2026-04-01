@@ -5,7 +5,7 @@ import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import styled from "styled-components";
-import { contents } from "./TimelinesContents";
+import { contents } from "./details/TimelinesContents";
 import { useTheme, useMediaQuery } from "@mui/material";
 
 export default function AlternateTimeline() {
@@ -13,7 +13,7 @@ export default function AlternateTimeline() {
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
-    <TimelineContainer className = "border-bottom-blue">
+    <TimelineContainer className = "border-bottom-blue" id="experience">
       <h1>MY DATA JOURNEY</h1>
       <hr />
 

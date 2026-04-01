@@ -1,10 +1,11 @@
 import styled from "styled-components";
-import Header from "./components/Header.js";
 import {
   Skills,
   ParticleComponent,
   MyTimeline,
-  Awards
+  Awards,
+  Header,
+  NavigationBar
 } from "./components/Section.js";
 
 
@@ -12,6 +13,7 @@ function App() {
   return (
     <>
       <MainContainer>
+        <NavigationBar />
         <Header />
         <Awards />
         <Skills />
@@ -26,7 +28,7 @@ export default App;
 
 const MainContainer = styled.div`
   min-height: 100vh;
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   right: 0;

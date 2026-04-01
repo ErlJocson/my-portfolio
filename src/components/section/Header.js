@@ -87,8 +87,9 @@ const HeaderContent = styled.div`
 const HeaderContainer = styled.div`
   img {
     box-shadow: var(--dark-shadow);
-    border-radius: 10px;
+    border-radius: 50%;
     height: 600px;
+    border: 2px solid gray;
   }
 
   display: flex;
@@ -110,7 +111,7 @@ const HeaderContainer = styled.div`
   padding: 50px 0;
     img {
       height: 200px;
-      border-radius: 10px;
+      border-radius: 50%;
       margin-bottom: 20px;
     }
   }
