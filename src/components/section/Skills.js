@@ -1,4 +1,8 @@
 import styled from "styled-components";
+import { IoMdAnalytics } from "react-icons/io";
+import { FaFileCode, FaTools } from "react-icons/fa";
+import { GiSkills } from "react-icons/gi";
+
 
 function Skills() {
   const programmingSkills = [
@@ -46,12 +50,14 @@ function Skills() {
   return (
     <>
       <SkillsMainContainer className="border-bottom-blue" id="skills">
-        <h1>Things i Bring to the Table</h1>
+        <h1>My Stack of Tricks</h1>
         <hr />
         <MySkillContainer id="skills">
           <SkillsContainer>
             <div className="skill-header gray-hover">
+              <IoMdAnalytics size={50} color="rgb(133, 76, 197)"/>
               <h3>Data Analytics</h3>
+              <hr/>
             </div>
             <div className="skill-container">
               {dataAnalytics.map((skills, id) => {
@@ -61,7 +67,9 @@ function Skills() {
           </SkillsContainer>
           <SkillsContainer>
             <div className="skill-header gray-hover">
+              <FaFileCode size={50} color="rgb(133, 76, 197)"/>
               <h3>Programming skills</h3>
+              <hr/>
             </div>
             <div className="skill-container">
               {programmingSkills.map((skills, id) => {
@@ -71,7 +79,9 @@ function Skills() {
           </SkillsContainer>
           <SkillsContainer>
             <div className="skill-header gray-hover">
+              <FaTools size={50} color="rgb(133, 76, 197)"/>
               <h3>Tools and technologies</h3>
+              <hr/>
             </div>
             <div className="skill-container">
               {tools.map((skill, id) => {
@@ -81,7 +91,9 @@ function Skills() {
           </SkillsContainer>
           <SkillsContainer>
             <div className="skill-header gray-hover">
+              <GiSkills size={50} color="rgb(133, 76, 197)"/>
               <h3>Soft skills</h3>
+              <hr/>
             </div>
             <div className="skill-container">
               {softSkills.map((skill, id) => {
@@ -131,16 +143,16 @@ const MySkillContainer = styled.div`
   margin: 10px auto;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: stretch;
   justify-content: space-evenly;
 `;
 
 const SkillsContainer = styled.div`
   width: 300px;
+  /* height: 200px; */
   padding: 20px;
   margin: 20px;
   background-color: rgba(8, 7, 44, 0.9);
-  /* box-shadow: var(--great-shadow); */
   border-radius: 10px;
 
   .skill-container {
@@ -159,10 +171,17 @@ const SkillsContainer = styled.div`
 
   .skill-header {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     h3 {
       color: white;
+      margin: 10px 0;
       text-transform: uppercase;
       text-align: center;
+      width: 100%;
+    }
+    hr {
+      background-color: rgb(133, 76, 197);
       width: 100%;
     }
   }
