@@ -145,6 +145,11 @@ const MySkillContainer = styled.div`
   flex-wrap: wrap;
   align-items: stretch;
   justify-content: space-evenly;
+  @media screen and (max-width: 800px) {
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
 `;
 
 const SkillsContainer = styled.div`
@@ -187,22 +192,18 @@ const SkillsContainer = styled.div`
   }
 
   @media screen and (max-width: 700px) {
-    width: 120px;
-    padding: 5px;
+    padding: 10px;
     margin: 10px;
     .skill-container {
-      display: block;
       div {
         font-size: 10px;
-        text-align: left;
         padding: 0;
-        margin: 2px;
+        margin: 15px;
       }
     }
 
     .skill-header {
       h3 {
-        color: black;
         font-size: 12px;
       }
     }

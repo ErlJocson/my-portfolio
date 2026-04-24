@@ -1,7 +1,7 @@
 export const awards = [
     {
         "name":"Best Data Analyst",
-        "date_awarded":"March 2026",
+        "date_awarded":"February 2026",
         "issue_by":"Hinduja Global Solutions",
         "description": [
             'Elevated team performance by introducing advanced analytics methods and automation, significantly improving decision-making speed and accuracy across stakeholders',
@@ -11,7 +11,7 @@ export const awards = [
     },
     {
         "name":"Top 5 Best AIM Ideas",
-        "date_awarded":"March 2026",
+        "date_awarded":"February 2026",
         "issue_by":"Hinduja Global Solutions",
         "description": [
             'Proposed an end-to-end automation framework covering data extraction, transformation, and reporting, eliminating manual workflows and significantly reducing turnaround time and human error',
