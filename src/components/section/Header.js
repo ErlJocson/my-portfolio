@@ -9,24 +9,26 @@ function Header() {
           <h1>ERL JERRALD JOCSON, CLSSGB</h1>
           <hr />
           <p>
-            Obtained a <em>Bachelors degree in Mathematics</em> from Laguna
-            State Polytechnic University, where I built a strong foundation in
-            problem-solving and analytical thinking
+            Data Scientist with a strong foundation in mathematics, statistics,
+            and research analysis. Graduated with a Bachelor of Science in
+            Mathematics and experienced in transforming complex data into
+            meaningful insights that support business decision-making,
+            operational improvement, and strategic initiatives.
           </p>
           <p>
-            Since then, I've applied these skills in real-world
-            settings—leveraging data analytics, automation, and statistical
-            modeling to{" "}
-            <em>
-              drive business excellence, optimize operations, and support
-              data-driven decision-making at scale
-            </em>
+            Experienced in statistical analysis, predictive analytics, business
+            intelligence, and research-driven problem solving. Has worked with
+            large-scale datasets, developed analytical reports and dashboards,
+            conducted quantitative and qualitative research, and applied
+            data-driven methodologies to identify trends, risks, and
+            opportunities across business operations.
           </p>
           <p>
-            I also earned a Lean Six Sigma Green Belt certification, which enhanced
-            my ability to apply structured problem-solving frameworks (DMAIC) and
-            statistical analysis to identify inefficiencies, improve processes, 
-            and build more impactful, data-driven solutions.
+            Certified Lean Six Sigma Green Belt professional with a focus on
+            process improvement, analytical thinking, and continuous
+            optimization. Committed to applying statistical reasoning and data
+            science methodologies to solve real-world business challenges and
+            support data-informed decision-making.
           </p>
         </HeaderContent>
       </ContentContainer>
@@ -36,8 +38,7 @@ function Header() {
 
 export default Header;
 
-const ContentContainer = styled.div`
-`;
+const ContentContainer = styled.div``;
 
 const HeaderContent = styled.div`
   box-shadow: var(--dark-shadow);
@@ -108,7 +109,7 @@ const HeaderContainer = styled.div`
   }
 
   @media screen and (max-width: 800px) {
-  padding: 50px 0;
+    padding: 50px 0;
     img {
       height: 200px;
       border-radius: 50%;

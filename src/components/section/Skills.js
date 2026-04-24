@@ -3,8 +3,30 @@ import { IoMdAnalytics } from "react-icons/io";
 import { FaFileCode, FaTools } from "react-icons/fa";
 import { GiSkills } from "react-icons/gi";
 
-
 function Skills() {
+  const businessFocusSkills = [
+    "Customer Analytics",
+    "Fraud Analytics",
+    "Process Optimization",
+    "Decision Support Systems",
+    "Data Storytelling",
+    "Executive Reporting",
+    "Management",
+  ];
+
+  const dataScienceSkills = [
+    "Statistical Modeling",
+    "Machine Learning",
+    "Predictive Analytics",
+    "Survival Analysis",
+    "Experimental Design",
+    "Hypothesis Testing",
+    "Time Series Analysis",
+    "Feature Engineering",
+    "Model Evaluation",
+    "Data Mining ",
+  ];
+
   const programmingSkills = [
     "Python",
     "Jupyter",
@@ -29,6 +51,9 @@ function Skills() {
   ];
 
   const dataAnalytics = [
+    "Data Visualization",
+    "Analytical thinking",
+    "Data Analysis",
     "Statistics",
     "Minitab",
     "Excel",
@@ -36,15 +61,6 @@ function Skills() {
     "Jamovi",
     "Power BI",
     "Query Building",
-  ];
-
-  const softSkills = [
-    "Management",
-    "Data Visualization",
-    "Data Analysis",
-    "Problem-solving",
-    "Analytical thinking",
-    "Teamwork",
   ];
 
   return (
@@ -55,9 +71,9 @@ function Skills() {
         <MySkillContainer id="skills">
           <SkillsContainer>
             <div className="skill-header gray-hover">
-              <IoMdAnalytics size={50} color="rgb(133, 76, 197)"/>
+              <IoMdAnalytics size={50} color="rgb(133, 76, 197)" />
               <h3>Data Analytics</h3>
-              <hr/>
+              <hr />
             </div>
             <div className="skill-container">
               {dataAnalytics.map((skills, id) => {
@@ -67,9 +83,33 @@ function Skills() {
           </SkillsContainer>
           <SkillsContainer>
             <div className="skill-header gray-hover">
-              <FaFileCode size={50} color="rgb(133, 76, 197)"/>
+              <IoMdAnalytics size={50} color="rgb(133, 76, 197)" />
+              <h3>Data Science</h3>
+              <hr />
+            </div>
+            <div className="skill-container">
+              {dataScienceSkills.map((skills, id) => {
+                return <div key={id}>{skills}</div>;
+              })}
+            </div>
+          </SkillsContainer>
+          <SkillsContainer>
+            <div className="skill-header gray-hover">
+              <GiSkills size={50} color="rgb(133, 76, 197)" />
+              <h3>Business Focus skills</h3>
+              <hr />
+            </div>
+            <div className="skill-container">
+              {businessFocusSkills.map((skill, id) => {
+                return <div key={id}>{skill}</div>;
+              })}
+            </div>
+          </SkillsContainer>
+          <SkillsContainer>
+            <div className="skill-header gray-hover">
+              <FaFileCode size={50} color="rgb(133, 76, 197)" />
               <h3>Programming skills</h3>
-              <hr/>
+              <hr />
             </div>
             <div className="skill-container">
               {programmingSkills.map((skills, id) => {
@@ -79,24 +119,12 @@ function Skills() {
           </SkillsContainer>
           <SkillsContainer>
             <div className="skill-header gray-hover">
-              <FaTools size={50} color="rgb(133, 76, 197)"/>
+              <FaTools size={50} color="rgb(133, 76, 197)" />
               <h3>Tools and technologies</h3>
-              <hr/>
+              <hr />
             </div>
             <div className="skill-container">
               {tools.map((skill, id) => {
-                return <div key={id}>{skill}</div>;
-              })}
-            </div>
-          </SkillsContainer>
-          <SkillsContainer>
-            <div className="skill-header gray-hover">
-              <GiSkills size={50} color="rgb(133, 76, 197)"/>
-              <h3>Soft skills</h3>
-              <hr/>
-            </div>
-            <div className="skill-container">
-              {softSkills.map((skill, id) => {
                 return <div key={id}>{skill}</div>;
               })}
             </div>
@@ -118,7 +146,7 @@ const SkillsMainContainer = styled.div`
   h1 {
     color: white;
     text-transform: uppercase;
-    text-align: center;;
+    text-align: center;
   }
 
   hr {
@@ -153,8 +181,7 @@ const MySkillContainer = styled.div`
 `;
 
 const SkillsContainer = styled.div`
-  width: 300px;
-  /* height: 200px; */
+  width: 400px;
   padding: 20px;
   margin: 20px;
   background-color: rgba(8, 7, 44, 0.9);
@@ -194,6 +221,7 @@ const SkillsContainer = styled.div`
   @media screen and (max-width: 700px) {
     padding: 10px;
     margin: 10px;
+    width: 90%;
     .skill-container {
       div {
         font-size: 10px;
