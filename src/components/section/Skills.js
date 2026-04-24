@@ -139,14 +139,14 @@ const SkillsContainer = styled.div`
   width: 300px;
   padding: 20px;
   margin: 20px;
-  background-color: rgba(255, 255, 255);
-  box-shadow: var(--great-shadow);
+  background-color: rgba(8, 7, 44, 0.9);
+  /* box-shadow: var(--great-shadow); */
   border-radius: 10px;
 
   .skill-container {
     display: flex;
     flex-wrap: wrap;
-    color: black;
+    color: white;
     justify-content: center;
     align-items: center;
     div {
@@ -160,7 +160,7 @@ const SkillsContainer = styled.div`
   .skill-header {
     display: flex;
     h3 {
-      color: black;
+      color: white;
       text-transform: uppercase;
       text-align: center;
       width: 100%;
