@@ -13,7 +13,7 @@ export default function AlternateTimeline() {
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
-    <TimelineContainer className = "border-bottom-blue" id="experience">
+    <TimelineContainer className="border-bottom-blue" id="experience">
       <h1>MY DATA JOURNEY</h1>
       <hr />
 
@@ -43,7 +43,9 @@ export default function AlternateTimeline() {
                       {content.descriptions.map((text, i) => (
                         <li
                           key={i}
-                          className={content.leftcontents ? "left-contents" : ""}
+                          className={
+                            content.leftcontents ? "left-contents" : ""
+                          }
                         >
                           {text}
                         </li>
@@ -56,7 +58,7 @@ export default function AlternateTimeline() {
           ))}
         </>
       ) : (
-        <ThisTimeline position = "alternate">
+        <ThisTimeline position="alternate">
           {contents.map((content, index) => (
             <TimelineItem key={index}>
               <TimelineSeparator>
@@ -82,7 +84,7 @@ export default function AlternateTimeline() {
                   </ContentHeader>
 
                   <ContentDescription>
-                    <ul className = {content.leftcontents ? "left-contents" : ""}>
+                    <ul className={content.leftcontents ? "left-contents" : ""}>
                       {content.descriptions.map((text, i) => (
                         <li key={i}>{text}</li>
                       ))}
@@ -108,7 +110,6 @@ const ThisTimeline = styled(Timeline)`
   }
 `;
 
-
 const ContentContainer = styled.div`
   padding: 20px;
   background-color: rgba(8, 7, 44, 0.9);
@@ -117,7 +118,7 @@ const ContentContainer = styled.div`
   margin: 0 0 20px 0;
   border-radius: 10px;
   @media screen and (max-width: 800px) {
-      font-size: 12px;
+    font-size: 12px;
   }
 `;
 
@@ -179,8 +180,8 @@ const MobileTimelineItem = styled.div`
   background-color: rgba(8, 7, 44, 0.9);
   padding: 10px;
   margin: 10px;
-  border-radius:10px;
-  color:white;
+  border-radius: 10px;
+  color: white;
 `;
 
 const MobileTimelineContent = styled.div``;
@@ -207,12 +208,12 @@ const MobileContentHeader = styled.div`
 const MobileContentContainer = styled.div``;
 
 const MobileContentDescription = styled.div`
- ul {
-  margin: 0px 12px;
+  ul {
+    margin: 0px 12px;
 
-  li {
-    margin: 4px 0;
+    li {
+      margin: 4px 0;
+    }
   }
- }
   font-size: 12px;
 `;

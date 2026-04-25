@@ -66,7 +66,7 @@ const ParticleComponent = () => {
       },
       detectRetina: true,
     }),
-    []
+    [],
   );
 
   if (init) {

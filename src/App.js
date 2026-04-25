@@ -7,15 +7,15 @@ import {
   Header,
 } from "./components/Section.js";
 
-
 function App() {
   return (
     <>
       <MainContainer>
-         <Header />
+        <Header />
         <Awards />
         <Skills />
         <MyTimeline />
+        {/* <ContactMe /> */}
       </MainContainer>
       <ParticleComponent />
     </>

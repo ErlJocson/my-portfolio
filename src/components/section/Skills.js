@@ -19,9 +19,6 @@ function Skills() {
     "Machine Learning",
     "Predictive Analytics",
     "Survival Analysis",
-    "Experimental Design",
-    "Hypothesis Testing",
-    "Time Series Analysis",
     "Feature Engineering",
     "Model Evaluation",
     "Data Mining ",
@@ -172,7 +169,7 @@ const MySkillContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
-  justify-content: space-evenly;
+  justify-content: center;
   @media screen and (max-width: 800px) {
     align-items: center;
     flex-direction: column;
