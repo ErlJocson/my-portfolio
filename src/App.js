@@ -1,21 +1,24 @@
 import styled from "styled-components";
 import {
-  Skills,
   ParticleComponent,
-  MyTimeline,
-  Awards,
-  Header,
+  NavigationBar,
+  Projects,
+  ContactMe,
 } from "./components/Section.js";
+import Home from "./components/Home.js";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <>
       <MainContainer>
-        <Header />
-        <Awards />
-        <Skills />
-        <MyTimeline />
-        {/* <ContactMe /> */}
+        <NavigationBar />
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/contact-me" element={<ContactMe />} />
+          <Route path="/projects" element={<Projects />} />
+        </Routes>
       </MainContainer>
       <ParticleComponent />
     </>

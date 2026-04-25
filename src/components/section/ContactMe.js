@@ -31,13 +31,16 @@ function ContactMe() {
 
   return (
     <MainContactContainer>
-      <form onSubmit={onSubmit}>
+      {/* <form onSubmit={onSubmit}>
         <input type="text" name="name" required />
         <input type="email" name="email" required />
         <textarea name="message" required></textarea>
         <button type="submit">Submit</button>
         <p>{result}</p>
-      </form>
+      </form> */}
+      <CommingSoon>
+        <p>Underconstruction</p>
+      </CommingSoon>
     </MainContactContainer>
   );
 }
@@ -45,3 +48,16 @@ function ContactMe() {
 export default ContactMe;
 
 const MainContactContainer = styled.div``;
+
+const CommingSoon = styled.div`
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 100px;
+    color: white;
+  }
+`;

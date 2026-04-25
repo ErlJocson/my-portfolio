@@ -89,7 +89,7 @@ const HeaderContainer = styled.div`
   img {
     box-shadow: var(--dark-shadow);
     border-radius: 50%;
-    height: 600px;
+    height: 320px;
     border: 2px solid gray;
   }
 
@@ -106,6 +106,12 @@ const HeaderContainer = styled.div`
   @media screen and (max-width: 1400px) {
     flex-direction: column;
     justify-content: center;
+  }
+
+  @media screen and (max-width: 1000px) {
+    img {
+      height: 250px;
+    }
   }
 
   @media screen and (max-width: 800px) {
