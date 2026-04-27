@@ -20,15 +20,15 @@ function NavigationBar() {
         </BurgerButton>
 
         <RightItems showNav={showNav}>
-          <MyLink to="/my-portfolio" onClick={() => setShowNav(!showNav)}>
+          <MyLink to="/my-portfolio" onClick={() => setShowNav(true)}>
             <FaHome size={30} />
             ABOUT ME
           </MyLink>
-          <MyLink to="/projects" onClick={() => setShowNav(!showNav)}>
+          <MyLink to="/projects" onClick={() => setShowNav(true)}>
             <PiProjectorScreenChartFill size={30} />
             PROJECTS
           </MyLink>
-          <MyLink to="/contact-me" onClick={() => setShowNav(!showNav)}>
+          <MyLink to="/contact-me" onClick={() => setShowNav(true)}>
             <MdContactEmergency size={30} />
             CONTACT
           </MyLink>
