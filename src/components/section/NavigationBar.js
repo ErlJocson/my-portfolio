@@ -20,7 +20,7 @@ function NavigationBar() {
         </BurgerButton>
 
         <RightItems showNav={showNav}>
-          <MyLink to="/my-portfolio" onClick={() => setShowNav(true)}>
+          <MyLink to="/" onClick={() => setShowNav(true)}>
             <FaHome size={30} />
             ABOUT ME
           </MyLink>
