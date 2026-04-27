@@ -24,9 +24,9 @@ function NavigationBar() {
             <FaHome size={30} />
             ABOUT ME
           </MyLink>
-          <MyLink to="/projects" onClick={() => setShowNav(true)}>
+          <MyLink to="/insight" onClick={() => setShowNav(true)}>
             <PiProjectorScreenChartFill size={30} />
-            PROJECTS
+            INSIGHTS
           </MyLink>
           <MyLink to="/contact-me" onClick={() => setShowNav(true)}>
             <MdContactEmergency size={30} />
@@ -97,7 +97,7 @@ const RightItems = styled(NavigationItems)`
 
   @media screen and (max-width: 1000px) {
     background-color: rgb(2, 1, 16);
-    margin: 0;
+    margin: 60px 0 0 0;
     z-index: 100;
     height: 100vh;
     display: ${(props) => (props.showNav ? "none" : "flex")};
@@ -107,7 +107,6 @@ const RightItems = styled(NavigationItems)`
     top: 0;
     left: 0;
     right: 0;
-    align-items: flex-start;
     justify-content: flex-start;
   }
 `;

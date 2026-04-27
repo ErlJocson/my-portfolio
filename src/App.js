@@ -17,7 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contact-me" element={<ContactMe />} />
-          <Route path="/projects" element={<Projects />} />
+          <Route path="/insight" element={<Projects />} />
         </Routes>
       </MainContainer>
       <ParticleComponent />

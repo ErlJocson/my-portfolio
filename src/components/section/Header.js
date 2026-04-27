@@ -73,7 +73,8 @@ const HeaderContent = styled.div`
 
   @media screen and (max-width: 800px) {
     & {
-      width: 300px;
+      width: 70%;
+      margin: 0 auto;
       p {
         font-size: 12px;
       }
