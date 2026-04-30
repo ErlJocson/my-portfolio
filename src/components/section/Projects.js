@@ -25,15 +25,20 @@ const ProjectMainContainer = styled.div`
   align-items: center;
   margin: 0 auto;
   margin-top: 20px;
-  /* background-color: black; */
   width: 80%;
 `;
 
 const ProjectContentsContainer = styled.div`
   background-color: rgba(2, 1, 16, 0.9);
+  border-left: 1px solid gray;
   margin: 10px;
   padding: 20px;
-  width: 700px;
+  width: 100%;
+  max-width: 700px;
+
+  @media screen and (max-width: 800px) {
+    width: 90%;
+  }
 `;
 
 const ProjectTitle = styled.h3`
