@@ -9,26 +9,17 @@ function Header() {
           <h1>ERL JERRALD JOCSON, CLSSGB</h1>
           <hr />
           <p>
-            Data Scientist with a strong foundation in mathematics, statistics,
-            and research analysis. Graduated with a Bachelor of Science in
-            Mathematics and experienced in transforming complex data into
-            meaningful insights that support business decision-making,
-            operational improvement, and strategic initiatives.
-          </p>
-          <p>
-            Experienced in statistical analysis, predictive analytics, business
-            intelligence, and research-driven problem solving. Has worked with
-            large-scale datasets, developed analytical reports and dashboards,
-            conducted quantitative and qualitative research, and applied
-            data-driven methodologies to identify trends, risks, and
-            opportunities across business operations.
-          </p>
-          <p>
-            Certified Lean Six Sigma Green Belt professional with a focus on
-            process improvement, analytical thinking, and continuous
-            optimization. Committed to applying statistical reasoning and data
-            science methodologies to solve real-world business challenges and
-            support data-informed decision-making.
+            Data Scientist with a Bachelor of Science in Mathematics and a
+            strong background in statistics, research, and data analysis.
+            Experienced in turning complex datasets into meaningful insights
+            that support business decision-making, operational improvement, and
+            strategic planning. Skilled in statistical analysis, predictive
+            analytics, business intelligence, dashboard development, and
+            research-driven problem solving, with experience handling
+            large-scale data and identifying trends, risks, and opportunities
+            across business operations. Also a Certified Lean Six Sigma Green
+            Belt professional focused on process improvement, analytical
+            thinking, and continuous optimization through data-driven solutions.
           </p>
         </HeaderContent>
       </ContentContainer>
