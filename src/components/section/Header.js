@@ -6,20 +6,21 @@ function Header() {
       <img src={process.env.PUBLIC_URL + "/profile.jpeg"} alt="" />
       <ContentContainer>
         <HeaderContent>
-          <h1>ERL JERRALD JOCSON, CLSSGB</h1>
+          <h1>ERL JOCSON, CLSSGB</h1>
           <hr />
           <p>
-            Data Scientist with a Bachelor of Science in Mathematics and a
-            strong background in statistics, research, and data analysis.
-            Experienced in turning complex datasets into meaningful insights
-            that support business decision-making, operational improvement, and
-            strategic planning. Skilled in statistical analysis, predictive
-            analytics, business intelligence, dashboard development, and
-            research-driven problem solving, with experience handling
-            large-scale data and identifying trends, risks, and opportunities
-            across business operations. Also a Certified Lean Six Sigma Green
-            Belt professional focused on process improvement, analytical
-            thinking, and continuous optimization through data-driven solutions.
+            Data Scientist from the Philippines with a Bachelor of Science in
+            Mathematics and a strong background in statistics, research, and
+            data analysis. Experienced in turning complex datasets into
+            meaningful insights that support business decision-making,
+            operational improvement, and strategic planning. Skilled in
+            statistical analysis, predictive analytics, business intelligence,
+            dashboard development, and research-driven problem solving, with
+            experience handling large-scale data and identifying trends, risks,
+            and opportunities across business operations. Also a Certified Lean
+            Six Sigma Green Belt professional focused on process improvement,
+            analytical thinking, and continuous optimization through data-driven
+            solutions.
           </p>
         </HeaderContent>
       </ContentContainer>
