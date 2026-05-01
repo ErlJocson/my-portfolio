@@ -30,7 +30,7 @@ const ModalContainer = styled.div`
   background-color: rgba(2, 1, 16, 0.98);
   padding: 30px;
   color: white;
-  overflow: scroll;
+  overflow: auto;
 `;
 
 const Container = styled.div`

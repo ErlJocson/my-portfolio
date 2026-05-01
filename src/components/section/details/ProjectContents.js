@@ -26,6 +26,11 @@ export const projects = [
     title: "Cluster Analysis for Targeted Improvement",
     subtitle:
       "Framework for using clustering techniques to guide targeted improvement strategies",
-    contents: ["", ""],
+    contents: [
+      "At first, i don't see the value of cluster analysis for the business. But, when i started working with my team in Maxicare i realized the true value of cluster analysis. It is really a high level tool used for making informed decisions and targeted improvements.",
+      "The main reason i did not see the true value of cluster analysis is due to the garbage academic projects that i had seen. People would run k-means, get 4 colored clusters, then invent stories. It was not an analysis, that is pattern cosplay.",
+      "So where do cluster analysis shines? This is really valueable when you have a lot of objects (this can be persons, clients, contact center agents, etc.) where you can measure their characteristics or performance. Cluster analysis is used to identify if there is a natural behavioral pattern hidden in your data.",
+      "Cluster created groups with similar behavior so you can; generalize efficienctly, target interventions, allocate resources, personalize actions, and simplify strategy.",
+    ],
   },
 ];
