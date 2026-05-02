@@ -83,6 +83,11 @@ const AwardContent = styled.div`
     }
   }
 
+  h3,
+  span {
+    text-align: center;
+  }
+
   hr {
     border: none;
     background-color: rgb(245, 31, 113);
@@ -101,8 +106,8 @@ const AwardContent = styled.div`
   @media screen and (max-width: 800px) {
     width: 100%;
 
-    h1 {
-      font-size: 20px;
+    h3 {
+      font-size: 18px;
     }
     ul {
       li {
