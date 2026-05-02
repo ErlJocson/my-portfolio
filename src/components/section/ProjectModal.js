@@ -66,9 +66,9 @@ const ProjectSubtitle = styled.h3`
 const ProjectContentContainer = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 30px 0;
+  margin: 20px 0;
   @media screen and (max-width: 800px) {
-    margin: 20px 0;
+    margin: 10px 0;
   }
 `;
 
