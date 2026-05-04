@@ -134,7 +134,7 @@ const FormContainer = styled.form`
   input,
   textarea {
     border: none;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: white;
     padding: 20px;
     border-radius: 10px;
     font-size: 1rem;
